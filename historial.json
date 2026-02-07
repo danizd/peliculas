@@ -1,1 +1,82 @@
-{"peliculas": {}}
+{
+  "peliculas": {
+    "la doncella del lago": {
+      "titulo": "La doncella del lago",
+      "nota": 6.5,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "diablo": {
+      "titulo": "Diablo",
+      "nota": 7.7,
+      "fecha": "2026-02-07",
+      "notificado": true
+    },
+    "aunque nuestro amor se desvanezca esta noche": {
+      "titulo": "Aunque nuestro amor se desvanezca esta noche",
+      "nota": 6.5,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "el libro de boba fett": {
+      "titulo": "El libro de Boba Fett",
+      "nota": 6.3,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "las leonas": {
+      "titulo": "Las Leonas",
+      "nota": 6.3,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "unfamiliar": {
+      "titulo": "Unfamiliar",
+      "nota": 6.3,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "star trek academia de la flota estelar tempo": {
+      "titulo": "Star Trek: Academia de la Flota Estelar Tempo",
+      "nota": 6.3,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "the copenhagen test": {
+      "titulo": "The Copenhagen Test",
+      "nota": 5.4,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "vanished": {
+      "titulo": "Vanished",
+      "nota": 5.4,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "the death of bunny munro": {
+      "titulo": "The Death of Bunny Munro",
+      "nota": 6.4,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "to cook a bear": {
+      "titulo": "To Cook A Bear",
+      "nota": 5.6,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "wake": {
+      "titulo": "Wake",
+      "nota": 5.0,
+      "fecha": "2026-02-07",
+      "notificado": false
+    },
+    "ponies": {
+      "titulo": "Ponies",
+      "nota": 5.6,
+      "fecha": "2026-02-07",
+      "notificado": false
+    }
+  }
+}
