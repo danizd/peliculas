@@ -77,6 +77,36 @@
       "nota": 5.6,
       "fecha": "2026-02-07",
       "notificado": false
+    },
+    "la ley de jenny pen": {
+      "titulo": "La ley de Jenny Pen",
+      "nota": 5.8,
+      "fecha": "2026-02-08",
+      "notificado": false
+    },
+    "la meta es el amor": {
+      "titulo": "La Meta es el Amor",
+      "nota": 3.1,
+      "fecha": "2026-02-08",
+      "notificado": false
+    },
+    "uf solo amigos": {
+      "titulo": "Uf Solo amigos",
+      "nota": 3.1,
+      "fecha": "2026-02-08",
+      "notificado": false
+    },
+    "domino day": {
+      "titulo": "Domino Day",
+      "nota": 3.1,
+      "fecha": "2026-02-08",
+      "notificado": false
+    },
+    "salvador": {
+      "titulo": "Salvador",
+      "nota": 5.8,
+      "fecha": "2026-02-08",
+      "notificado": false
     }
   }
 }
