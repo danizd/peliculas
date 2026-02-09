@@ -107,6 +107,18 @@
       "nota": 5.8,
       "fecha": "2026-02-08",
       "notificado": false
+    },
+    "a sami wedding": {
+      "titulo": "A Sami Wedding",
+      "nota": 0,
+      "fecha": "2026-02-09",
+      "notificado": false
+    },
+    "the gold": {
+      "titulo": "The Gold",
+      "nota": 6.0,
+      "fecha": "2026-02-09",
+      "notificado": false
     }
   }
 }
