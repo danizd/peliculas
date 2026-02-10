@@ -119,6 +119,24 @@
       "nota": 6.0,
       "fecha": "2026-02-09",
       "notificado": false
+    },
+    "vieja loca": {
+      "titulo": "Vieja loca",
+      "nota": 4.9,
+      "fecha": "2026-02-10",
+      "notificado": false
+    },
+    "un fantasma util": {
+      "titulo": "Un fantasma útil",
+      "nota": 5.9,
+      "fecha": "2026-02-10",
+      "notificado": false
+    },
+    "zona de caza": {
+      "titulo": "Zona de caza",
+      "nota": 4.2,
+      "fecha": "2026-02-10",
+      "notificado": false
     }
   }
 }
