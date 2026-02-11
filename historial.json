@@ -137,6 +137,30 @@
       "nota": 4.2,
       "fecha": "2026-02-10",
       "notificado": false
+    },
+    "mas que rivales": {
+      "titulo": "Más que rivales",
+      "nota": 7.6,
+      "fecha": "2026-02-11",
+      "notificado": true
+    },
+    "las aventuras completamente inventadas de dick tur": {
+      "titulo": "Las Aventuras Completamente Inventadas De Dick Tur",
+      "nota": 5.4,
+      "fecha": "2026-02-11",
+      "notificado": false
+    },
+    "pauline": {
+      "titulo": "Pauline",
+      "nota": 5.1,
+      "fecha": "2026-02-11",
+      "notificado": false
+    },
+    "el abogado del lincoln": {
+      "titulo": "El abogado del Lincoln",
+      "nota": 6.6,
+      "fecha": "2026-02-11",
+      "notificado": false
     }
   }
 }
