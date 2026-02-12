@@ -161,6 +161,12 @@
       "nota": 6.6,
       "fecha": "2026-02-11",
       "notificado": false
+    },
+    "el elegido": {
+      "titulo": "El elegido",
+      "nota": 5.3,
+      "fecha": "2026-02-12",
+      "notificado": false
     }
   }
 }
