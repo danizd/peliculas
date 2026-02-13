@@ -167,6 +167,30 @@
       "nota": 5.3,
       "fecha": "2026-02-12",
       "notificado": false
+    },
+    "un simple accidente": {
+      "titulo": "Un simple accidente",
+      "nota": 6.9,
+      "fecha": "2026-02-13",
+      "notificado": false
+    },
+    "la noche del espantapajaros": {
+      "titulo": "La noche del espantapajaros",
+      "nota": 5.9,
+      "fecha": "2026-02-13",
+      "notificado": false
+    },
+    "quien quiere casarse con un astronauta": {
+      "titulo": "Quien Quiere Casarse Con Un Astronauta",
+      "nota": 4.2,
+      "fecha": "2026-02-13",
+      "notificado": false
+    },
+    "motorvalley": {
+      "titulo": "Motorvalley",
+      "nota": 4.2,
+      "fecha": "2026-02-13",
+      "notificado": false
     }
   }
 }
