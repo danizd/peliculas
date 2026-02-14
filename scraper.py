@@ -399,6 +399,41 @@ def format_telegram_message(movie_info: dict, original_title: str) -> str:
     return message
 
 
+def format_summary_message(saltadas: int, nuevas_analizadas: int, good_movies_count: int, min_rating: float) -> str:
+    """Formatea el mensaje de resumen para Telegram."""
+    message = f"""📊 <b>Resumen de búsqueda de películas</b>
+
+<b>Películas saltadas:</b> {saltadas}
+<b>Películas analizadas:</b> {nuevas_analizadas}
+<b>Películas con nota ⭐>{min_rating}:</b> {good_movies_count}
+
+<i>Última actualización: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</i>
+"""
+    return message
+
+
+def format_no_results_message() -> str:
+    """Formatea el mensaje cuando no hay resultados."""
+    message = f"""❌ <b>Sin resultados en la búsqueda</b>
+
+No se encontraron películas o series nuevas que cumplan los criterios de búsqueda.
+
+<i>Última actualización: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</i>
+"""
+    return message
+
+
+def format_error_message(error: str) -> str:
+    """Formatea el mensaje de error para Telegram."""
+    message = f"""⚠️ <b>Error durante la ejecución del scraper</b>
+
+<b>Error:</b> <code>{error}</code>
+
+<i>Hora del error: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}</i>
+"""
+    return message
+
+
 def main():
     """Función principal del script."""
     print(f"[*] Iniciando scraper - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
@@ -407,96 +442,130 @@ def main():
     # Obtener configuración de Telegram
     telegram_token, telegram_chat_id = get_telegram_config()
     
-    # Cargar historial de películas ya analizadas
-    historial = cargar_historial()
-    print(f"[+] Historial cargado: {len(historial['peliculas'])} peliculas previas")
-    
-    # Inicializar sesión de FilmAffinity
-    print("\n[*] Conectando a FilmAffinity...")
-    if not init_filmaffinity_session():
-        print("[X] No se pudo conectar a FilmAffinity. Abortando.")
-        return
-    
-    # Obtener títulos de MejorTorrent
-    titles = get_mejortorrent_titles()
-    
-    if not titles:
-        print("[X] No se encontraron titulos en MejorTorrent")
-        return
-    
-    # Buscar cada título en FilmAffinity
-    good_movies = []
-    nuevas_analizadas = 0
-    saltadas = 0
-    
-    # Filtrar primero las que ya están en historial
-    titulos_nuevos = []
-    for title_info in titles:
-        if not ya_analizada(historial, title_info['clean_title']):
-            titulos_nuevos.append(title_info)
+    try:
+        # Cargar historial de películas ya analizadas
+        historial = cargar_historial()
+        print(f"[+] Historial cargado: {len(historial['peliculas'])} peliculas previas")
+        
+        # Inicializar sesión de FilmAffinity
+        print("\n[*] Conectando a FilmAffinity...")
+        if not init_filmaffinity_session():
+            print("[X] No se pudo conectar a FilmAffinity. Abortando.")
+            error_msg = "No se pudo conectar a FilmAffinity"
+            if telegram_token and telegram_chat_id:
+                send_telegram_message(telegram_token, telegram_chat_id, format_error_message(error_msg))
+            return
+        
+        # Obtener títulos de MejorTorrent
+        titles = get_mejortorrent_titles()
+        
+        if not titles:
+            print("[X] No se encontraron titulos en MejorTorrent")
+            error_msg = "No se encontraron títulos en MejorTorrent"
+            if telegram_token and telegram_chat_id:
+                send_telegram_message(telegram_token, telegram_chat_id, format_error_message(error_msg))
+            return
+        
+        # Buscar cada título en FilmAffinity
+        good_movies = []
+        nuevas_analizadas = 0
+        saltadas = 0
+        
+        # Filtrar primero las que ya están en historial
+        titulos_nuevos = []
+        for title_info in titles:
+            if not ya_analizada(historial, title_info['clean_title']):
+                titulos_nuevos.append(title_info)
+            else:
+                saltadas += 1
+        
+        print(f"[+] Titulos nuevos a analizar: {len(titulos_nuevos)} (saltadas: {saltadas})")
+        
+        # Limitar a MAX_PELICULAS_POR_EJECUCION para evitar rate limiting
+        titulos_a_procesar = titulos_nuevos[:MAX_PELICULAS_POR_EJECUCION]
+        
+        if not titulos_a_procesar:
+            print("[*] No hay titulos nuevos que analizar")
         else:
-            saltadas += 1
-    
-    print(f"[+] Titulos nuevos a analizar: {len(titulos_nuevos)} (saltadas: {saltadas})")
-    
-    # Limitar a MAX_PELICULAS_POR_EJECUCION para evitar rate limiting
-    titulos_a_procesar = titulos_nuevos[:MAX_PELICULAS_POR_EJECUCION]
-    
-    if not titulos_a_procesar:
-        print("[*] No hay titulos nuevos que analizar")
-    else:
-        print(f"[*] Procesando {len(titulos_a_procesar)} titulos (max: {MAX_PELICULAS_POR_EJECUCION})\n")
-    
-    for i, title_info in enumerate(titulos_a_procesar, 1):
-        clean_title = title_info['clean_title']
+            print(f"[*] Procesando {len(titulos_a_procesar)} titulos (max: {MAX_PELICULAS_POR_EJECUCION})\n")
         
-        print(f"[{i}/{len(titulos_a_procesar)}] Buscando: {clean_title}")
-        
-        movie_info = search_filmaffinity(clean_title)
-        
-        if movie_info and movie_info.get("rating"):
-            rating = movie_info["rating"]
-            print(f"  [OK] Encontrada: {movie_info.get('title')} - Nota: {rating}")
+        for i, title_info in enumerate(titulos_a_procesar, 1):
+            clean_title = title_info['clean_title']
             
-            notificado = rating >= MIN_RATING
-            agregar_al_historial(historial, clean_title, rating, notificado)
-            nuevas_analizadas += 1
+            print(f"[{i}/{len(titulos_a_procesar)}] Buscando: {clean_title}")
             
-            if notificado:
-                print(f"  [***] Nota superior a {MIN_RATING}!")
-                good_movies.append({
-                    "original": title_info["original_title"],
-                    "info": movie_info
-                })
-        else:
-            print(f"  [--] No encontrada o sin nota")
-            # Guardar también las no encontradas para no reintentar
-            agregar_al_historial(historial, clean_title, 0, False)
-            nuevas_analizadas += 1
+            movie_info = search_filmaffinity(clean_title)
+            
+            if movie_info and movie_info.get("rating"):
+                rating = movie_info["rating"]
+                print(f"  [OK] Encontrada: {movie_info.get('title')} - Nota: {rating}")
+                
+                notificado = rating >= MIN_RATING
+                agregar_al_historial(historial, clean_title, rating, notificado)
+                nuevas_analizadas += 1
+                
+                if notificado:
+                    print(f"  [***] Nota superior a {MIN_RATING}!")
+                    good_movies.append({
+                        "original": title_info["original_title"],
+                        "info": movie_info
+                    })
+            else:
+                print(f"  [--] No encontrada o sin nota")
+                # Guardar también las no encontradas para no reintentar
+                agregar_al_historial(historial, clean_title, 0, False)
+                nuevas_analizadas += 1
+            
+            # Guardar historial después de cada película (por si se interrumpe)
+            guardar_historial(historial)
         
-        # Guardar historial después de cada película (por si se interrumpe)
-        guardar_historial(historial)
+        # Guardar historial actualizado (resumen final)
+        print(f"\n[+] Historial actualizado: {len(historial['peliculas'])} peliculas totales")
+        
+        # Enviar notificaciones por Telegram
+        print("\n" + "=" * 50)
+        print(f"[RESUMEN] Saltadas: {saltadas} | Nuevas: {nuevas_analizadas} | Con nota >{MIN_RATING}: {len(good_movies)}")
+        
+        if telegram_token and telegram_chat_id:
+            print("\n[*] Enviando notificaciones por Telegram...")
+            
+            # Enviar películas con buena nota (si las hay)
+            if good_movies:
+                for movie in good_movies:
+                    message = format_telegram_message(movie["info"], movie["original"])
+                    if send_telegram_message(telegram_token, telegram_chat_id, message):
+                        print(f"  [OK] Notificacion enviada: {movie['info'].get('title')}")
+                    time.sleep(0.5)  # Evitar rate limiting de Telegram
+            else:
+                # Si no hay películas, enviar resumen
+                print("  [*] No hay películas con nota superior a {}".format(MIN_RATING))
+                message = format_no_results_message()
+                if send_telegram_message(telegram_token, telegram_chat_id, message):
+                    print("  [OK] Mensaje de sin resultados enviado")
+            
+            # Enviar resumen general
+            time.sleep(0.5)
+            summary_message = format_summary_message(saltadas, nuevas_analizadas, len(good_movies), MIN_RATING)
+            if send_telegram_message(telegram_token, telegram_chat_id, summary_message):
+                print("  [OK] Resumen enviado")
+        elif good_movies:
+            print("\n[!] No se pueden enviar notificaciones (Telegram no configurado)")
+            for movie in good_movies:
+                print(f"  - {movie['info'].get('title')} ({movie['info'].get('rating')})")
+        
+        print("\n[OK] Script finalizado")
     
-    # Guardar historial actualizado (resumen final)
-    print(f"\n[+] Historial actualizado: {len(historial['peliculas'])} peliculas totales")
-    
-    # Enviar notificaciones por Telegram
-    print("\n" + "=" * 50)
-    print(f"[RESUMEN] Saltadas: {saltadas} | Nuevas: {nuevas_analizadas} | Con nota >{MIN_RATING}: {len(good_movies)}")
-    
-    if good_movies and telegram_token and telegram_chat_id:
-        print("\n[*] Enviando notificaciones por Telegram...")
-        for movie in good_movies:
-            message = format_telegram_message(movie["info"], movie["original"])
-            if send_telegram_message(telegram_token, telegram_chat_id, message):
-                print(f"  [OK] Notificacion enviada: {movie['info'].get('title')}")
-            time.sleep(0.5)  # Evitar rate limiting de Telegram
-    elif good_movies:
-        print("\n[!] No se pueden enviar notificaciones (Telegram no configurado)")
-        for movie in good_movies:
-            print(f"  - {movie['info'].get('title')} ({movie['info'].get('rating')})")
-    
-    print("\n[OK] Script finalizado")
+    except Exception as e:
+        """Capturar cualquier error y notificar por Telegram."""
+        error_message = f"{type(e).__name__}: {str(e)}"
+        print(f"\n[ERROR] {error_message}")
+        
+        if telegram_token and telegram_chat_id:
+            print("[*] Enviando notificación de error por Telegram...")
+            if send_telegram_message(telegram_token, telegram_chat_id, format_error_message(error_message)):
+                print("[OK] Notificación de error enviada")
+        
+        raise
 
 
 if __name__ == "__main__":
