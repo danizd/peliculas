@@ -191,6 +191,48 @@
       "nota": 4.2,
       "fecha": "2026-02-13",
       "notificado": false
+    },
+    "singular": {
+      "titulo": "Singular",
+      "nota": 5.2,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "hermandad estado de terror": {
+      "titulo": "Hermandad: Estado de terror",
+      "nota": 5.2,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "primate": {
+      "titulo": "Primate",
+      "nota": 5.5,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "ninos de plomo": {
+      "titulo": "Ninos de plomo",
+      "nota": 6.1,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "dias de ceniza": {
+      "titulo": "Días de ceniza",
+      "nota": 6.8,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "codigo de silencio": {
+      "titulo": "Código de silencio",
+      "nota": 6.3,
+      "fecha": "2026-02-14",
+      "notificado": false
+    },
+    "sullivans crossing": {
+      "titulo": "Sullivans Crossing",
+      "nota": 5.6,
+      "fecha": "2026-02-14",
+      "notificado": false
     }
   }
 }
