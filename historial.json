@@ -275,6 +275,30 @@
       "nota": 5.8,
       "fecha": "2026-02-16",
       "notificado": false
+    },
+    "el museo de la inocencia": {
+      "titulo": "El Museo de la Inocencia",
+      "nota": 0,
+      "fecha": "2026-02-17",
+      "notificado": false
+    },
+    "el arte de parecer sarah": {
+      "titulo": "El arte de parecer Sarah",
+      "nota": 5.9,
+      "fecha": "2026-02-17",
+      "notificado": false
+    },
+    "alex hugo": {
+      "titulo": "Alex Hugo",
+      "nota": 5.9,
+      "fecha": "2026-02-17",
+      "notificado": false
+    },
+    "love story john f kennedy jr y carolyn bessette": {
+      "titulo": "Love Story John F Kennedy Jr y Carolyn Bessette",
+      "nota": 6.3,
+      "fecha": "2026-02-17",
+      "notificado": false
     }
   }
 }
