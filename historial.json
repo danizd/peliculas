@@ -299,6 +299,42 @@
       "nota": 6.3,
       "fecha": "2026-02-17",
       "notificado": false
+    },
+    "ahora me ves 3": {
+      "titulo": "Ahora me ves 3",
+      "nota": 5.3,
+      "fecha": "2026-02-18",
+      "notificado": false
+    },
+    "love me love": {
+      "titulo": "Love Me Love",
+      "nota": 4.0,
+      "fecha": "2026-02-18",
+      "notificado": false
+    },
+    "wildcat": {
+      "titulo": "Wildcat",
+      "nota": 3.6,
+      "fecha": "2026-02-18",
+      "notificado": false
+    },
+    "la venganza de popeye": {
+      "titulo": "La venganza de Popeye",
+      "nota": 2.6,
+      "fecha": "2026-02-18",
+      "notificado": false
+    },
+    "miradas asesinas": {
+      "titulo": "Miradas asesinas",
+      "nota": 5.1,
+      "fecha": "2026-02-18",
+      "notificado": false
+    },
+    "cross": {
+      "titulo": "Cross",
+      "nota": 7.8,
+      "fecha": "2026-02-18",
+      "notificado": true
     }
   }
 }
