@@ -335,6 +335,24 @@
       "nota": 7.8,
       "fecha": "2026-02-18",
       "notificado": true
+    },
+    "me has robado el corazon": {
+      "titulo": "Me has robado el corazón",
+      "nota": 5.1,
+      "fecha": "2026-02-19",
+      "notificado": false
+    },
+    "menudas piezas": {
+      "titulo": "Menudas piezas",
+      "nota": 5.5,
+      "fecha": "2026-02-19",
+      "notificado": false
+    },
+    "rafaela y su loco mundo": {
+      "titulo": "Rafaela y su loco mundo",
+      "nota": 5.2,
+      "fecha": "2026-02-19",
+      "notificado": false
     }
   }
 }
