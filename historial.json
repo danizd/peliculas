@@ -353,6 +353,24 @@
       "nota": 5.2,
       "fecha": "2026-02-19",
       "notificado": false
+    },
+    "el tour universitario con joe": {
+      "titulo": "El tour universitario con Joe",
+      "nota": 4.0,
+      "fecha": "2026-02-20",
+      "notificado": false
+    },
+    "roofman un ladron en el tejado": {
+      "titulo": "Roofman: Un ladrón en el tejado",
+      "nota": 6.3,
+      "fecha": "2026-02-20",
+      "notificado": false
+    },
+    "red eye": {
+      "titulo": "Red Eye",
+      "nota": 6.2,
+      "fecha": "2026-02-20",
+      "notificado": false
     }
   }
 }
