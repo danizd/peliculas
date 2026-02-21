@@ -371,6 +371,54 @@
       "nota": 6.2,
       "fecha": "2026-02-20",
       "notificado": false
+    },
+    "abrahams boys a dracula story": {
+      "titulo": "Abrahams Boys A Dracula Story",
+      "nota": 4.1,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "sin piedad": {
+      "titulo": "Sin piedad",
+      "nota": 5.9,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "la hermanastra fea": {
+      "titulo": "La hermanastra fea",
+      "nota": 6.7,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "song sung blue cancion para dos": {
+      "titulo": "Song Sung Blue Cancion Para Dos",
+      "nota": 6.7,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "hamnet": {
+      "titulo": "Hamnet",
+      "nota": 7.4,
+      "fecha": "2026-02-21",
+      "notificado": true
+    },
+    "asesinatos en reikiavik": {
+      "titulo": "Asesinatos en Reikiavik",
+      "nota": 6.7,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "armorsaurs": {
+      "titulo": "Armorsaurs",
+      "nota": 6.7,
+      "fecha": "2026-02-21",
+      "notificado": false
+    },
+    "56 dias": {
+      "titulo": "56 días",
+      "nota": 5.2,
+      "fecha": "2026-02-21",
+      "notificado": false
     }
   }
 }
