@@ -425,6 +425,30 @@
       "nota": 5.1,
       "fecha": "2026-02-22",
       "notificado": false
+    },
+    "honey don39t": {
+      "titulo": "Honey Don&#39;t!",
+      "nota": 0,
+      "fecha": "2026-02-23",
+      "notificado": false
+    },
+    "la deuda": {
+      "titulo": "La deuda",
+      "nota": 6.2,
+      "fecha": "2026-02-23",
+      "notificado": false
+    },
+    "28 anos despues el templo de los huesos": {
+      "titulo": "28 años después: El templo de los huesos",
+      "nota": 6.5,
+      "fecha": "2026-02-23",
+      "notificado": false
+    },
+    "el vinculo sueco": {
+      "titulo": "El vínculo sueco",
+      "nota": 6.1,
+      "fecha": "2026-02-23",
+      "notificado": false
     }
   }
 }
