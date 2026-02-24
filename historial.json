@@ -449,6 +449,24 @@
       "nota": 6.1,
       "fecha": "2026-02-23",
       "notificado": false
+    },
+    "watching you": {
+      "titulo": "Watching You",
+      "nota": 0,
+      "fecha": "2026-02-24",
+      "notificado": false
+    },
+    "banksters": {
+      "titulo": "Banksters",
+      "nota": 0,
+      "fecha": "2026-02-24",
+      "notificado": false
+    },
+    "portobello": {
+      "titulo": "Portobello",
+      "nota": 0,
+      "fecha": "2026-02-24",
+      "notificado": false
     }
   }
 }
