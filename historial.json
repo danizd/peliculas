@@ -467,6 +467,36 @@
       "nota": 0,
       "fecha": "2026-02-24",
       "notificado": false
+    },
+    "rental family": {
+      "titulo": "Rental Family",
+      "nota": 7.1,
+      "fecha": "2026-02-25",
+      "notificado": true
+    },
+    "dracula": {
+      "titulo": "Drácula",
+      "nota": 7.6,
+      "fecha": "2026-02-25",
+      "notificado": true
+    },
+    "cortafuego": {
+      "titulo": "Cortafuego",
+      "nota": 5.4,
+      "fecha": "2026-02-25",
+      "notificado": false
+    },
+    "dj ahmet": {
+      "titulo": "DJ Ahmet",
+      "nota": 6.9,
+      "fecha": "2026-02-25",
+      "notificado": false
+    },
+    "suenos en oslo": {
+      "titulo": "Sueños en Oslo",
+      "nota": 6.6,
+      "fecha": "2026-02-25",
+      "notificado": false
     }
   }
 }
