@@ -497,6 +497,36 @@
       "nota": 6.6,
       "fecha": "2026-02-25",
       "notificado": false
+    },
+    "los tigres": {
+      "titulo": "Los Tigres",
+      "nota": 6.5,
+      "fecha": "2026-02-26",
+      "notificado": false
+    },
+    "anemona": {
+      "titulo": "Anémona",
+      "nota": 5.4,
+      "fecha": "2026-02-26",
+      "notificado": false
+    },
+    "los huerfanos": {
+      "titulo": "Los huérfanos",
+      "nota": 4.7,
+      "fecha": "2026-02-26",
+      "notificado": false
+    },
+    "el agente nocturno": {
+      "titulo": "El agente nocturno",
+      "nota": 6.3,
+      "fecha": "2026-02-26",
+      "notificado": false
+    },
+    "lo ultimo que me dijo": {
+      "titulo": "Lo Ultimo Que Me Dijo",
+      "nota": 5.5,
+      "fecha": "2026-02-26",
+      "notificado": false
     }
   }
 }
