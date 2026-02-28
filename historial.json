@@ -533,6 +533,24 @@
       "nota": 6.1,
       "fecha": "2026-02-27",
       "notificado": false
+    },
+    "el engano": {
+      "titulo": "El engaño",
+      "nota": 5.1,
+      "fecha": "2026-02-28",
+      "notificado": false
+    },
+    "calle malaga": {
+      "titulo": "Calle Málaga",
+      "nota": 6.0,
+      "fecha": "2026-02-28",
+      "notificado": false
+    },
+    "la resistencia invisible": {
+      "titulo": "La resistencia invisible",
+      "nota": 6.2,
+      "fecha": "2026-02-28",
+      "notificado": false
     }
   }
 }
