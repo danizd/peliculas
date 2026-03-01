@@ -551,6 +551,42 @@
       "nota": 6.2,
       "fecha": "2026-02-28",
       "notificado": false
+    },
+    "nuremberg": {
+      "titulo": "Núremberg",
+      "nota": 6.9,
+      "fecha": "2026-03-01",
+      "notificado": false
+    },
+    "somnium": {
+      "titulo": "Somnium",
+      "nota": 5.4,
+      "fecha": "2026-03-01",
+      "notificado": false
+    },
+    "muerte en el invierno": {
+      "titulo": "Muerte en el invierno",
+      "nota": 5.6,
+      "fecha": "2026-03-01",
+      "notificado": false
+    },
+    "parecido a un asesinato": {
+      "titulo": "Parecido a un asesinato",
+      "nota": 5.4,
+      "fecha": "2026-03-01",
+      "notificado": false
+    },
+    "un hombre mejor": {
+      "titulo": "Un hombre mejor",
+      "nota": 7.3,
+      "fecha": "2026-03-01",
+      "notificado": true
+    },
+    "girl taken": {
+      "titulo": "Girl Taken",
+      "nota": 6.0,
+      "fecha": "2026-03-01",
+      "notificado": false
     }
   }
 }
