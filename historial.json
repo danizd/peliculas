@@ -587,6 +587,36 @@
       "nota": 6.0,
       "fecha": "2026-03-01",
       "notificado": false
+    },
+    "en un instante": {
+      "titulo": "En un instante",
+      "nota": 4.8,
+      "fecha": "2026-03-02",
+      "notificado": false
+    },
+    "clika": {
+      "titulo": "Clika",
+      "nota": 4.8,
+      "fecha": "2026-03-02",
+      "notificado": false
+    },
+    "leo and lou": {
+      "titulo": "Leo and Lou",
+      "nota": 6.3,
+      "fecha": "2026-03-02",
+      "notificado": false
+    },
+    "the burbs": {
+      "titulo": "The Burbs",
+      "nota": 4.8,
+      "fecha": "2026-03-02",
+      "notificado": false
+    },
+    "el flow de kagoen": {
+      "titulo": "El flow de Kagoen",
+      "nota": 4.8,
+      "fecha": "2026-03-02",
+      "notificado": false
     }
   }
 }
