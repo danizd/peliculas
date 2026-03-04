@@ -617,6 +617,60 @@
       "nota": 4.8,
       "fecha": "2026-03-02",
       "notificado": false
+    },
+    "acusada": {
+      "titulo": "Acusada",
+      "nota": 4.5,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "la carretera interminable": {
+      "titulo": "La carretera interminable",
+      "nota": 6.0,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "turbulencias": {
+      "titulo": "Turbulencias",
+      "nota": 4.6,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "la masacre del raton": {
+      "titulo": "La masacre del ratón",
+      "nota": 2.6,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "los domingos": {
+      "titulo": "Los domingos",
+      "nota": 7.4,
+      "fecha": "2026-03-04",
+      "notificado": true
+    },
+    "negotiator": {
+      "titulo": "Negotiator",
+      "nota": 6.6,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "marshals una historia de yellowstone tempora": {
+      "titulo": "Marshals: Una historia de Yellowstone Tempora",
+      "nota": 6.6,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "dtf st louis": {
+      "titulo": "Dtf St Louis",
+      "nota": 6.6,
+      "fecha": "2026-03-04",
+      "notificado": false
+    },
+    "joven secuestrada": {
+      "titulo": "Joven secuestrada",
+      "nota": 5.9,
+      "fecha": "2026-03-04",
+      "notificado": false
     }
   }
 }
