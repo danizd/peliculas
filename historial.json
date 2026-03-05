@@ -671,6 +671,54 @@
       "nota": 5.9,
       "fecha": "2026-03-04",
       "notificado": false
+    },
+    "no dejemos que esta noche todo se pierda": {
+      "titulo": "No dejemos que esta noche todo se pierda",
+      "nota": 6.1,
+      "fecha": "2026-03-05",
+      "notificado": false
+    },
+    "un dia con peter hujar": {
+      "titulo": "Un día con Peter Hujar",
+      "nota": 5.4,
+      "fecha": "2026-03-05",
+      "notificado": false
+    },
+    "momentos para recordar": {
+      "titulo": "Momentos para recordar",
+      "nota": 5.4,
+      "fecha": "2026-03-05",
+      "notificado": false
+    },
+    "the hack": {
+      "titulo": "The Hack",
+      "nota": 5.8,
+      "fecha": "2026-03-05",
+      "notificado": false
+    },
+    "riot women": {
+      "titulo": "Riot Women",
+      "nota": 7.1,
+      "fecha": "2026-03-05",
+      "notificado": true
+    },
+    "el beso de la sirena": {
+      "titulo": "El beso de la sirena",
+      "nota": 7.1,
+      "fecha": "2026-03-05",
+      "notificado": true
+    },
+    "cineclub": {
+      "titulo": "Cineclub",
+      "nota": 5.9,
+      "fecha": "2026-03-05",
+      "notificado": false
+    },
+    "the hunting party": {
+      "titulo": "The Hunting Party",
+      "nota": 4.3,
+      "fecha": "2026-03-05",
+      "notificado": false
     }
   }
 }
