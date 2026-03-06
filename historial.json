@@ -719,6 +719,36 @@
       "nota": 4.3,
       "fecha": "2026-03-05",
       "notificado": false
+    },
+    "krazy house": {
+      "titulo": "Krazy House",
+      "nota": 4.8,
+      "fecha": "2026-03-06",
+      "notificado": false
+    },
+    "dead shot": {
+      "titulo": "Dead Shot",
+      "nota": 5.9,
+      "fecha": "2026-03-06",
+      "notificado": false
+    },
+    "el descendiente": {
+      "titulo": "El descendiente",
+      "nota": 4.5,
+      "fecha": "2026-03-06",
+      "notificado": false
+    },
+    "furtivo": {
+      "titulo": "Furtivo",
+      "nota": 4.5,
+      "fecha": "2026-03-06",
+      "notificado": false
+    },
+    "el joven sherlock": {
+      "titulo": "El joven Sherlock",
+      "nota": 6.1,
+      "fecha": "2026-03-06",
+      "notificado": false
     }
   }
 }
