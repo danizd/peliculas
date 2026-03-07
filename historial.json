@@ -749,6 +749,30 @@
       "nota": 6.1,
       "fecha": "2026-03-06",
       "notificado": false
+    },
+    "la tregua": {
+      "titulo": "La tregua",
+      "nota": 6.0,
+      "fecha": "2026-03-07",
+      "notificado": false
+    },
+    "suburbanos 3": {
+      "titulo": "Suburbanos 3",
+      "nota": 6.0,
+      "fecha": "2026-03-07",
+      "notificado": false
+    },
+    "marshals una historia de yellowstone temporad": {
+      "titulo": "Marshals Una historia de Yellowstone Temporad",
+      "nota": 6.0,
+      "fecha": "2026-03-07",
+      "notificado": false
+    },
+    "negociador": {
+      "titulo": "Negociador",
+      "nota": 6.6,
+      "fecha": "2026-03-07",
+      "notificado": false
     }
   }
 }
