@@ -773,6 +773,24 @@
       "nota": 6.6,
       "fecha": "2026-03-07",
       "notificado": false
+    },
+    "bambi la venganza": {
+      "titulo": "Bambi La Venganza",
+      "nota": 4.3,
+      "fecha": "2026-03-08",
+      "notificado": false
+    },
+    "escuadron letal": {
+      "titulo": "Escuadrón letal",
+      "nota": 5.8,
+      "fecha": "2026-03-08",
+      "notificado": false
+    },
+    "maquina de guerra": {
+      "titulo": "Máquina de guerra",
+      "nota": 5.6,
+      "fecha": "2026-03-08",
+      "notificado": false
     }
   }
 }
