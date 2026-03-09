@@ -791,6 +791,36 @@
       "nota": 5.6,
       "fecha": "2026-03-08",
       "notificado": false
+    },
+    "the occupant": {
+      "titulo": "The Occupant",
+      "nota": 4.5,
+      "fecha": "2026-03-09",
+      "notificado": false
+    },
+    "valiant one": {
+      "titulo": "Valiant One",
+      "nota": 4.4,
+      "fecha": "2026-03-09",
+      "notificado": false
+    },
+    "reversion": {
+      "titulo": "Reversión",
+      "nota": 5.3,
+      "fecha": "2026-03-09",
+      "notificado": false
+    },
+    "vladimir": {
+      "titulo": "Vladimir",
+      "nota": 5.5,
+      "fecha": "2026-03-09",
+      "notificado": false
+    },
+    "boston blue": {
+      "titulo": "Boston Blue",
+      "nota": 5.5,
+      "fecha": "2026-03-09",
+      "notificado": false
     }
   }
 }
