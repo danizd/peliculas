@@ -821,6 +821,30 @@
       "nota": 5.5,
       "fecha": "2026-03-09",
       "notificado": false
+    },
+    "la asistenta": {
+      "titulo": "La asistenta",
+      "nota": 6.0,
+      "fecha": "2026-03-10",
+      "notificado": false
+    },
+    "mongol": {
+      "titulo": "Mongol",
+      "nota": 6.3,
+      "fecha": "2026-03-10",
+      "notificado": false
+    },
+    "deathstalker": {
+      "titulo": "Deathstalker",
+      "nota": 5.7,
+      "fecha": "2026-03-10",
+      "notificado": false
+    },
+    "stags": {
+      "titulo": "Stags",
+      "nota": 5.7,
+      "fecha": "2026-03-10",
+      "notificado": false
     }
   }
 }
