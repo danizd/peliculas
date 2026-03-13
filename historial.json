@@ -863,6 +863,42 @@
       "nota": 7.6,
       "fecha": "2026-03-12",
       "notificado": true
+    },
+    "la larga marcha": {
+      "titulo": "La larga marcha",
+      "nota": 5.9,
+      "fecha": "2026-03-13",
+      "notificado": false
+    },
+    "el ultimo tiroteo": {
+      "titulo": "El último tiroteo",
+      "nota": 3.7,
+      "fecha": "2026-03-13",
+      "notificado": false
+    },
+    "el accidente de piano": {
+      "titulo": "El accidente de piano",
+      "nota": 5.8,
+      "fecha": "2026-03-13",
+      "notificado": false
+    },
+    "arlempdes": {
+      "titulo": "Arlempdes",
+      "nota": 3.7,
+      "fecha": "2026-03-13",
+      "notificado": false
+    },
+    "scarpetta": {
+      "titulo": "Scarpetta",
+      "nota": 5.5,
+      "fecha": "2026-03-13",
+      "notificado": false
+    },
+    "atrapadas en bolivia": {
+      "titulo": "Atrapadas en Bolivia",
+      "nota": 5.5,
+      "fecha": "2026-03-13",
+      "notificado": false
     }
   }
 }
