@@ -899,6 +899,24 @@
       "nota": 5.5,
       "fecha": "2026-03-13",
       "notificado": false
+    },
+    "subsuelo": {
+      "titulo": "Subsuelo",
+      "nota": 6.3,
+      "fecha": "2026-03-14",
+      "notificado": false
+    },
+    "emily la estafadora": {
+      "titulo": "Emily la estafadora",
+      "nota": 6.0,
+      "fecha": "2026-03-14",
+      "notificado": false
+    },
+    "patience": {
+      "titulo": "Patience",
+      "nota": 5.7,
+      "fecha": "2026-03-14",
+      "notificado": false
     }
   }
 }
