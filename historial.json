@@ -917,6 +917,36 @@
       "nota": 5.7,
       "fecha": "2026-03-14",
       "notificado": false
+    },
+    "espacio tiempo": {
+      "titulo": "Espacio Tiempo",
+      "nota": 3.1,
+      "fecha": "2026-03-15",
+      "notificado": false
+    },
+    "house on eden": {
+      "titulo": "House on Eden",
+      "nota": 3.7,
+      "fecha": "2026-03-15",
+      "notificado": false
+    },
+    "bau artista en guerra": {
+      "titulo": "Bau artista en guerra",
+      "nota": 3.7,
+      "fecha": "2026-03-15",
+      "notificado": false
+    },
+    "prometea": {
+      "titulo": "Prometea",
+      "nota": 3.1,
+      "fecha": "2026-03-15",
+      "notificado": false
+    },
+    "day one": {
+      "titulo": "Day One",
+      "nota": 4.1,
+      "fecha": "2026-03-15",
+      "notificado": false
     }
   }
 }
