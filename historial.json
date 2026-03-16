@@ -947,6 +947,30 @@
       "nota": 4.1,
       "fecha": "2026-03-15",
       "notificado": false
+    },
+    "alpha": {
+      "titulo": "Alpha",
+      "nota": 5.8,
+      "fecha": "2026-03-16",
+      "notificado": false
+    },
+    "el veterano": {
+      "titulo": "El veterano",
+      "nota": 5.5,
+      "fecha": "2026-03-16",
+      "notificado": false
+    },
+    "la voz de hind": {
+      "titulo": "La voz de Hind",
+      "nota": 7.4,
+      "fecha": "2026-03-16",
+      "notificado": true
+    },
+    "empatia": {
+      "titulo": "Empatía",
+      "nota": 7.6,
+      "fecha": "2026-03-16",
+      "notificado": true
     }
   }
 }
