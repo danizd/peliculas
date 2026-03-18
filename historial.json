@@ -995,6 +995,18 @@
       "nota": 5.4,
       "fecha": "2026-03-17",
       "notificado": false
+    },
+    "urchin": {
+      "titulo": "Urchin",
+      "nota": 6.4,
+      "fecha": "2026-03-18",
+      "notificado": false
+    },
+    "aranas un experimento que salio mal": {
+      "titulo": "¡Arañas! Un Experimento Que Salió Mal",
+      "nota": 6.4,
+      "fecha": "2026-03-18",
+      "notificado": false
     }
   }
 }
