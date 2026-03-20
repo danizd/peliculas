@@ -1013,6 +1013,24 @@
       "nota": 0,
       "fecha": "2026-03-19",
       "notificado": false
+    },
+    "mujeres imperfectas": {
+      "titulo": "Mujeres imperfectas",
+      "nota": 0,
+      "fecha": "2026-03-20",
+      "notificado": false
+    },
+    "emergencia radiactiva": {
+      "titulo": "Emergencia radiactiva",
+      "nota": 0,
+      "fecha": "2026-03-20",
+      "notificado": false
+    },
+    "monarch el legado de los monstruos": {
+      "titulo": "Monarch El Legado De Los Monstruos",
+      "nota": 5.9,
+      "fecha": "2026-03-20",
+      "notificado": false
     }
   }
 }
