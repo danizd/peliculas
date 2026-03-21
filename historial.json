@@ -1031,6 +1031,36 @@
       "nota": 5.9,
       "fecha": "2026-03-20",
       "notificado": false
+    },
+    "volver a": {
+      "titulo": "Volver a",
+      "nota": 6.4,
+      "fecha": "2026-03-21",
+      "notificado": false
+    },
+    "nuestras hijas": {
+      "titulo": "Nuestras hijas",
+      "nota": 6.2,
+      "fecha": "2026-03-21",
+      "notificado": false
+    },
+    "torrente presidente o no": {
+      "titulo": "Torrente Presidente… ¿o no?",
+      "nota": 5.8,
+      "fecha": "2026-03-21",
+      "notificado": false
+    },
+    "entre tierras": {
+      "titulo": "Entre Tierras",
+      "nota": 5.8,
+      "fecha": "2026-03-21",
+      "notificado": false
+    },
+    "outlander 8": {
+      "titulo": "Outlander 8",
+      "nota": 6.8,
+      "fecha": "2026-03-21",
+      "notificado": false
     }
   }
 }
