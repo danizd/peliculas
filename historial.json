@@ -1061,6 +1061,36 @@
       "nota": 6.8,
       "fecha": "2026-03-21",
       "notificado": false
+    },
+    "no hay otra opcion": {
+      "titulo": "No hay otra opción",
+      "nota": 6.8,
+      "fecha": "2026-03-22",
+      "notificado": false
+    },
+    "peaky blinders el hombre inmortal": {
+      "titulo": "Peaky Blinders: El hombre inmortal",
+      "nota": 6.4,
+      "fecha": "2026-03-22",
+      "notificado": false
+    },
+    "perros y diablos": {
+      "titulo": "Perros y Diablos",
+      "nota": 6.4,
+      "fecha": "2026-03-22",
+      "notificado": false
+    },
+    "siempre es invierno": {
+      "titulo": "Siempre es invierno",
+      "nota": 6.2,
+      "fecha": "2026-03-22",
+      "notificado": false
+    },
+    "lilly lives alone": {
+      "titulo": "Lilly Lives Alone",
+      "nota": 6.2,
+      "fecha": "2026-03-22",
+      "notificado": false
     }
   }
 }
