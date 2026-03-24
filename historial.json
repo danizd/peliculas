@@ -1103,6 +1103,42 @@
       "nota": 4.6,
       "fecha": "2026-03-23",
       "notificado": false
+    },
+    "esa cosa con alas": {
+      "titulo": "Esa Cosa con Alas",
+      "nota": 5.8,
+      "fecha": "2026-03-24",
+      "notificado": false
+    },
+    "zeta": {
+      "titulo": "Zeta",
+      "nota": 5.6,
+      "fecha": "2026-03-24",
+      "notificado": false
+    },
+    "keeper": {
+      "titulo": "Keeper",
+      "nota": 5.2,
+      "fecha": "2026-03-24",
+      "notificado": false
+    },
+    "arde la sangre": {
+      "titulo": "Arde la sangre",
+      "nota": 6.1,
+      "fecha": "2026-03-24",
+      "notificado": false
+    },
+    "ted": {
+      "titulo": "Ted",
+      "nota": 5.5,
+      "fecha": "2026-03-24",
+      "notificado": false
+    },
+    "la mujer danesa": {
+      "titulo": "La mujer danesa",
+      "nota": 6.4,
+      "fecha": "2026-03-24",
+      "notificado": false
     }
   }
 }
