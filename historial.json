@@ -1139,6 +1139,24 @@
       "nota": 6.4,
       "fecha": "2026-03-24",
       "notificado": false
+    },
+    "ciudad sin sueno": {
+      "titulo": "Ciudad sin sueño",
+      "nota": 6.5,
+      "fecha": "2026-03-25",
+      "notificado": false
+    },
+    "la cabana siniestra": {
+      "titulo": "La cabaña siniestra",
+      "nota": 5.9,
+      "fecha": "2026-03-25",
+      "notificado": false
+    },
+    "seduccion fatal": {
+      "titulo": "Seduccion fatal",
+      "nota": 4.0,
+      "fecha": "2026-03-25",
+      "notificado": false
     }
   }
 }
