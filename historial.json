@@ -1157,6 +1157,36 @@
       "nota": 4.0,
       "fecha": "2026-03-25",
       "notificado": false
+    },
+    "send help": {
+      "titulo": "Send Help",
+      "nota": 6.4,
+      "fecha": "2026-03-27",
+      "notificado": false
+    },
+    "sin conexion": {
+      "titulo": "Sin conexión",
+      "nota": 6.0,
+      "fecha": "2026-03-27",
+      "notificado": false
+    },
+    "el retorno de piglet": {
+      "titulo": "El retorno de Piglet",
+      "nota": 2.7,
+      "fecha": "2026-03-27",
+      "notificado": false
+    },
+    "lucky luke": {
+      "titulo": "Lucky Luke",
+      "nota": 5.1,
+      "fecha": "2026-03-27",
+      "notificado": false
+    },
+    "scrubs": {
+      "titulo": "Scrubs",
+      "nota": 7.2,
+      "fecha": "2026-03-27",
+      "notificado": true
     }
   }
 }
