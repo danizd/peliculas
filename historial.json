@@ -1187,6 +1187,24 @@
       "nota": 7.2,
       "fecha": "2026-03-27",
       "notificado": true
+    },
+    "algo terrible esta a punto de suceder tempora": {
+      "titulo": "Algo terrible está a punto de suceder Tempora",
+      "nota": 0,
+      "fecha": "2026-03-28",
+      "notificado": false
+    },
+    "harry hole": {
+      "titulo": "Harry Hole",
+      "nota": 0,
+      "fecha": "2026-03-28",
+      "notificado": false
+    },
+    "deadloch": {
+      "titulo": "Deadloch",
+      "nota": 6.2,
+      "fecha": "2026-03-28",
+      "notificado": false
     }
   }
 }
