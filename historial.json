@@ -1205,6 +1205,54 @@
       "nota": 6.2,
       "fecha": "2026-03-28",
       "notificado": false
+    },
+    "pretty lethal": {
+      "titulo": "Pretty Lethal",
+      "nota": 5.3,
+      "fecha": "2026-03-29",
+      "notificado": false
+    },
+    "la linea roja": {
+      "titulo": "La línea roja",
+      "nota": 7.1,
+      "fecha": "2026-03-29",
+      "notificado": true
+    },
+    "53 domingos": {
+      "titulo": "53 domingos",
+      "nota": 5.7,
+      "fecha": "2026-03-29",
+      "notificado": false
+    },
+    "daredevil born again": {
+      "titulo": "Daredevil Born Again",
+      "nota": 7.0,
+      "fecha": "2026-03-29",
+      "notificado": true
+    },
+    "privilegios": {
+      "titulo": "Privilegios",
+      "nota": 7.0,
+      "fecha": "2026-03-29",
+      "notificado": true
+    },
+    "vida perra": {
+      "titulo": "Vida perra",
+      "nota": 2.0,
+      "fecha": "2026-03-29",
+      "notificado": false
+    },
+    "the madison": {
+      "titulo": "The Madison",
+      "nota": 7.5,
+      "fecha": "2026-03-29",
+      "notificado": true
+    },
+    "por cien millones": {
+      "titulo": "Por cien millones",
+      "nota": 6.3,
+      "fecha": "2026-03-29",
+      "notificado": false
     }
   }
 }
