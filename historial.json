@@ -1253,6 +1253,30 @@
       "nota": 6.3,
       "fecha": "2026-03-29",
       "notificado": false
+    },
+    "la bala": {
+      "titulo": "La bala",
+      "nota": 5.9,
+      "fecha": "2026-03-30",
+      "notificado": false
+    },
+    "mike y nick y nick y alice": {
+      "titulo": "Mike y Nick y Nick y Alice",
+      "nota": 4.9,
+      "fecha": "2026-03-30",
+      "notificado": false
+    },
+    "coartadas": {
+      "titulo": "Coartadas",
+      "nota": 5.0,
+      "fecha": "2026-03-30",
+      "notificado": false
+    },
+    "bait": {
+      "titulo": "Bait",
+      "nota": 6.0,
+      "fecha": "2026-03-30",
+      "notificado": false
     }
   }
 }
