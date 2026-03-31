@@ -1277,6 +1277,24 @@
       "nota": 6.0,
       "fecha": "2026-03-30",
       "notificado": false
+    },
+    "golpes": {
+      "titulo": "Golpes",
+      "nota": 8.0,
+      "fecha": "2026-03-31",
+      "notificado": true
+    },
+    "irish blood": {
+      "titulo": "Irish Blood",
+      "nota": 8.0,
+      "fecha": "2026-03-31",
+      "notificado": true
+    },
+    "veronika": {
+      "titulo": "Veronika",
+      "nota": 5.3,
+      "fecha": "2026-03-31",
+      "notificado": false
     }
   }
 }
