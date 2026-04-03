@@ -1319,6 +1319,36 @@
       "nota": 7.1,
       "fecha": "2026-04-02",
       "notificado": true
+    },
+    "el testamento de ann lee": {
+      "titulo": "El testamento de Ann Lee",
+      "nota": 5.8,
+      "fecha": "2026-04-03",
+      "notificado": false
+    },
+    "scream 7": {
+      "titulo": "Scream 7",
+      "nota": 5.2,
+      "fecha": "2026-04-03",
+      "notificado": false
+    },
+    "si es martes es asesinato": {
+      "titulo": "Si es martes es asesinato",
+      "nota": 5.8,
+      "fecha": "2026-04-03",
+      "notificado": false
+    },
+    "interconectados": {
+      "titulo": "Interconectados",
+      "nota": 5.8,
+      "fecha": "2026-04-03",
+      "notificado": false
+    },
+    "gomorra el origen": {
+      "titulo": "Gomorra El origen",
+      "nota": 6.6,
+      "fecha": "2026-04-03",
+      "notificado": false
     }
   }
 }
