@@ -1349,6 +1349,36 @@
       "nota": 6.6,
       "fecha": "2026-04-03",
       "notificado": false
+    },
+    "come reza ladra": {
+      "titulo": "Come reza ladra",
+      "nota": 4.2,
+      "fecha": "2026-04-04",
+      "notificado": false
+    },
+    "humint": {
+      "titulo": "Humint",
+      "nota": 5.8,
+      "fecha": "2026-04-04",
+      "notificado": false
+    },
+    "los colores del tiempo": {
+      "titulo": "Los colores del tiempo",
+      "nota": 6.9,
+      "fecha": "2026-04-04",
+      "notificado": false
+    },
+    "under salt marsh": {
+      "titulo": "Under Salt Marsh",
+      "nota": 6.9,
+      "fecha": "2026-04-04",
+      "notificado": false
+    },
+    "lynley": {
+      "titulo": "Lynley",
+      "nota": 6.0,
+      "fecha": "2026-04-04",
+      "notificado": false
     }
   }
 }
