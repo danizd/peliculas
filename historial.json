@@ -1379,6 +1379,36 @@
       "nota": 6.0,
       "fecha": "2026-04-04",
       "notificado": false
+    },
+    "marty supreme": {
+      "titulo": "Marty Supreme",
+      "nota": 7.1,
+      "fecha": "2026-04-05",
+      "notificado": true
+    },
+    "un pueblo al rescate": {
+      "titulo": "Un pueblo al rescate",
+      "nota": 7.1,
+      "fecha": "2026-04-05",
+      "notificado": true
+    },
+    "ruta de escape": {
+      "titulo": "Ruta de escape",
+      "nota": 6.4,
+      "fecha": "2026-04-05",
+      "notificado": false
+    },
+    "mopies": {
+      "titulo": "Mopies",
+      "nota": 5.8,
+      "fecha": "2026-04-05",
+      "notificado": false
+    },
+    "master crimes": {
+      "titulo": "Master Crimes",
+      "nota": 5.8,
+      "fecha": "2026-04-05",
+      "notificado": false
     }
   }
 }
