@@ -1427,6 +1427,18 @@
       "nota": 5.9,
       "fecha": "2026-04-06",
       "notificado": false
+    },
+    "los pecados de kujo": {
+      "titulo": "Los pecados de Kujo",
+      "nota": 0,
+      "fecha": "2026-04-08",
+      "notificado": false
+    },
+    "gray": {
+      "titulo": "Gray",
+      "nota": 0,
+      "fecha": "2026-04-08",
+      "notificado": false
     }
   }
 }
