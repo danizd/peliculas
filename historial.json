@@ -1439,6 +1439,48 @@
       "nota": 0,
       "fecha": "2026-04-08",
       "notificado": false
+    },
+    "zero": {
+      "titulo": "Zero",
+      "nota": 5.0,
+      "fecha": "2026-04-09",
+      "notificado": false
+    },
+    "brides": {
+      "titulo": "Brides",
+      "nota": 5.4,
+      "fecha": "2026-04-09",
+      "notificado": false
+    },
+    "la novia": {
+      "titulo": "La novia",
+      "nota": 7.2,
+      "fecha": "2026-04-09",
+      "notificado": true
+    },
+    "the audacity": {
+      "titulo": "The Audacity",
+      "nota": 7.2,
+      "fecha": "2026-04-09",
+      "notificado": true
+    },
+    "mar de fondo": {
+      "titulo": "Mar de fondo",
+      "nota": 5.3,
+      "fecha": "2026-04-09",
+      "notificado": false
+    },
+    "perros de caza": {
+      "titulo": "Perros de caza",
+      "nota": 6.8,
+      "fecha": "2026-04-09",
+      "notificado": false
+    },
+    "vicios ocultos": {
+      "titulo": "Vicios ocultos",
+      "nota": 6.7,
+      "fecha": "2026-04-09",
+      "notificado": false
     }
   }
 }
