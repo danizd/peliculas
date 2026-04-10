@@ -1481,6 +1481,48 @@
       "nota": 6.7,
       "fecha": "2026-04-09",
       "notificado": false
+    },
+    "18 rosas": {
+      "titulo": "18 rosas",
+      "nota": 0,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "sniper en tierra de nadie": {
+      "titulo": "Sniper En tierra de nadie",
+      "nota": 0,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "5 libras de presion": {
+      "titulo": "5 libras de Presion",
+      "nota": 0,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "los testamentos": {
+      "titulo": "Los testamentos",
+      "nota": 5.8,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "esto no es un misterioso asesinato": {
+      "titulo": "Esto no es un misterioso asesinato",
+      "nota": 0,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "clanes": {
+      "titulo": "Clanes",
+      "nota": 5.8,
+      "fecha": "2026-04-10",
+      "notificado": false
+    },
+    "cia": {
+      "titulo": "CIA",
+      "nota": 5.8,
+      "fecha": "2026-04-10",
+      "notificado": false
     }
   }
 }
