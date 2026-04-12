@@ -1523,6 +1523,30 @@
       "nota": 5.8,
       "fecha": "2026-04-10",
       "notificado": false
+    },
+    "5lbs of pressure": {
+      "titulo": "5lbs of Pressure",
+      "nota": 5.0,
+      "fecha": "2026-04-12",
+      "notificado": false
+    },
+    "la casa del terror": {
+      "titulo": "La casa del terror",
+      "nota": 4.5,
+      "fecha": "2026-04-12",
+      "notificado": false
+    },
+    "embestida": {
+      "titulo": "Embestida",
+      "nota": 4.6,
+      "fecha": "2026-04-12",
+      "notificado": false
+    },
+    "vida privada": {
+      "titulo": "Vida privada",
+      "nota": 5.3,
+      "fecha": "2026-04-12",
+      "notificado": false
     }
   }
 }
