@@ -1547,6 +1547,42 @@
       "nota": 5.3,
       "fecha": "2026-04-12",
       "notificado": false
+    },
+    "outcome": {
+      "titulo": "Outcome",
+      "nota": 4.2,
+      "fecha": "2026-04-13",
+      "notificado": false
+    },
+    "the smashing machine": {
+      "titulo": "The Smashing Machine",
+      "nota": 5.9,
+      "fecha": "2026-04-13",
+      "notificado": false
+    },
+    "el extranjero": {
+      "titulo": "El extranjero",
+      "nota": 6.5,
+      "fecha": "2026-04-13",
+      "notificado": false
+    },
+    "malcolm de mal en peor": {
+      "titulo": "Malcolm de mal en peor",
+      "nota": 6.3,
+      "fecha": "2026-04-13",
+      "notificado": false
+    },
+    "errores epicos": {
+      "titulo": "Errores epicos",
+      "nota": 5.6,
+      "fecha": "2026-04-13",
+      "notificado": false
+    },
+    "the boys": {
+      "titulo": "The Boys",
+      "nota": 7.7,
+      "fecha": "2026-04-13",
+      "notificado": true
     }
   }
 }
