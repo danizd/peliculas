@@ -1589,6 +1589,18 @@
       "nota": 4.0,
       "fecha": "2026-04-14",
       "notificado": false
+    },
+    "la asesina inconsciente": {
+      "titulo": "La Asesina Inconsciente",
+      "nota": 4.2,
+      "fecha": "2026-04-15",
+      "notificado": false
+    },
+    "bandi": {
+      "titulo": "Bandi",
+      "nota": 4.2,
+      "fecha": "2026-04-15",
+      "notificado": false
     }
   }
 }
