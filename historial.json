@@ -1601,6 +1601,30 @@
       "nota": 4.2,
       "fecha": "2026-04-15",
       "notificado": false
+    },
+    "misdirection": {
+      "titulo": "Misdirection",
+      "nota": 4.4,
+      "fecha": "2026-04-17",
+      "notificado": false
+    },
+    "maleantes": {
+      "titulo": "Maleantes",
+      "nota": 5.7,
+      "fecha": "2026-04-17",
+      "notificado": false
+    },
+    "margo tiene problemas de dinero 10": {
+      "titulo": "Margo tiene problemas de dinero [10",
+      "nota": 5.7,
+      "fecha": "2026-04-17",
+      "notificado": false
+    },
+    "el ultimo refugio": {
+      "titulo": "El ultimo refugio",
+      "nota": 5.7,
+      "fecha": "2026-04-17",
+      "notificado": false
     }
   }
 }
