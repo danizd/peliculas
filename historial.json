@@ -1625,6 +1625,24 @@
       "nota": 5.7,
       "fecha": "2026-04-17",
       "notificado": false
+    },
+    "the home": {
+      "titulo": "The Home",
+      "nota": 5.0,
+      "fecha": "2026-04-18",
+      "notificado": false
+    },
+    "la otra victima": {
+      "titulo": "La otra víctima",
+      "nota": 6.4,
+      "fecha": "2026-04-18",
+      "notificado": false
+    },
+    "violencia en la frontera 2": {
+      "titulo": "Violencia en la frontera 2",
+      "nota": 5.0,
+      "fecha": "2026-04-18",
+      "notificado": false
     }
   }
 }
