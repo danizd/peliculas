@@ -1643,6 +1643,30 @@
       "nota": 5.0,
       "fecha": "2026-04-18",
       "notificado": false
+    },
+    "el ultimo depredador": {
+      "titulo": "El último depredador",
+      "nota": 4.3,
+      "fecha": "2026-04-19",
+      "notificado": false
+    },
+    "balls up con un par": {
+      "titulo": "Balls Up: Con un par",
+      "nota": 4.0,
+      "fecha": "2026-04-19",
+      "notificado": false
+    },
+    "el hombre menguante": {
+      "titulo": "El hombre menguante",
+      "nota": 5.7,
+      "fecha": "2026-04-19",
+      "notificado": false
+    },
+    "euphoria": {
+      "titulo": "Euphoria",
+      "nota": 6.4,
+      "fecha": "2026-04-19",
+      "notificado": false
     }
   }
 }
