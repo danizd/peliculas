@@ -1667,6 +1667,48 @@
       "nota": 6.4,
       "fecha": "2026-04-19",
       "notificado": false
+    },
+    "father mother sister brother": {
+      "titulo": "Father Mother Sister Brother",
+      "nota": 6.2,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "idolos": {
+      "titulo": "Ídolos",
+      "nota": 5.8,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "la tostadora": {
+      "titulo": "La tostadora",
+      "nota": 5.8,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "margo tiene problemas de dinero": {
+      "titulo": "Margo tiene problemas de dinero",
+      "nota": 6.7,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "margo tiene problemas de dinero 72": {
+      "titulo": "Margo tiene problemas de dinero [72",
+      "nota": 6.7,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "la ley de lidia pot": {
+      "titulo": "La ley de Lidia Poët",
+      "nota": 6.4,
+      "fecha": "2026-04-20",
+      "notificado": false
+    },
+    "la ley de lidia poet": {
+      "titulo": "La ley de Lidia Poet",
+      "nota": 6.4,
+      "fecha": "2026-04-20",
+      "notificado": false
     }
   }
 }
