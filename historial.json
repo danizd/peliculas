@@ -1709,6 +1709,30 @@
       "nota": 6.4,
       "fecha": "2026-04-20",
       "notificado": false
+    },
+    "the moment": {
+      "titulo": "The Moment",
+      "nota": 5.9,
+      "fecha": "2026-04-21",
+      "notificado": false
+    },
+    "gator lake": {
+      "titulo": "Gator Lake",
+      "nota": 2.7,
+      "fecha": "2026-04-21",
+      "notificado": false
+    },
+    "180": {
+      "titulo": "180",
+      "nota": 4.4,
+      "fecha": "2026-04-21",
+      "notificado": false
+    },
+    "bronca": {
+      "titulo": "Bronca",
+      "nota": 6.6,
+      "fecha": "2026-04-21",
+      "notificado": false
     }
   }
 }
