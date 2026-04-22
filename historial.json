@@ -1733,6 +1733,30 @@
       "nota": 6.6,
       "fecha": "2026-04-21",
       "notificado": false
+    },
+    "balearic": {
+      "titulo": "Balearic",
+      "nota": 4.9,
+      "fecha": "2026-04-22",
+      "notificado": false
+    },
+    "franz kafka": {
+      "titulo": "Franz Kafka",
+      "nota": 5.6,
+      "fecha": "2026-04-22",
+      "notificado": false
+    },
+    "nosotros lejos del ruido": {
+      "titulo": "Nosotros lejos del ruido",
+      "nota": 5.6,
+      "fecha": "2026-04-22",
+      "notificado": false
+    },
+    "companeras de cuarto": {
+      "titulo": "Compañeras de cuarto",
+      "nota": 4.5,
+      "fecha": "2026-04-22",
+      "notificado": false
     }
   }
 }
