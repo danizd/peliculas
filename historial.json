@@ -1757,6 +1757,36 @@
       "nota": 4.5,
       "fecha": "2026-04-22",
       "notificado": false
+    },
+    "los no elegidos": {
+      "titulo": "Los no elegidos",
+      "nota": 5.6,
+      "fecha": "2026-04-23",
+      "notificado": false
+    },
+    "amenaza de tormenta": {
+      "titulo": "Amenaza de tormenta",
+      "nota": 6.9,
+      "fecha": "2026-04-23",
+      "notificado": false
+    },
+    "barrio esperanza": {
+      "titulo": "Barrio Esperanza",
+      "nota": 4.8,
+      "fecha": "2026-04-23",
+      "notificado": false
+    },
+    "machos alfa": {
+      "titulo": "Machos alfa",
+      "nota": 6.3,
+      "fecha": "2026-04-23",
+      "notificado": false
+    },
+    "punto nemo": {
+      "titulo": "Punto Nemo",
+      "nota": 4.2,
+      "fecha": "2026-04-23",
+      "notificado": false
     }
   }
 }
