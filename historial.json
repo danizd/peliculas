@@ -1787,6 +1787,60 @@
       "nota": 4.2,
       "fecha": "2026-04-23",
       "notificado": false
+    },
+    "una cena y lo que surja": {
+      "titulo": "Una cena y lo que surja",
+      "nota": 5.7,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "greenland 2": {
+      "titulo": "Greenland 2",
+      "nota": 4.5,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "la vida fuera": {
+      "titulo": "La Vida Fuera",
+      "nota": 5.3,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "cuando todo es posible": {
+      "titulo": "Cuando todo es posible",
+      "nota": 4.5,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "yo siempre a veces": {
+      "titulo": "Yo siempre a veces",
+      "nota": 6.5,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "el homenaje": {
+      "titulo": "El homenaje",
+      "nota": 6.5,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "si pudiera te daria una patada": {
+      "titulo": "Si Pudiera Te Daria Una Patada",
+      "nota": 6.4,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "el valor absoluto del amor": {
+      "titulo": "El valor absoluto del amor",
+      "nota": 5.7,
+      "fecha": "2026-04-24",
+      "notificado": false
+    },
+    "lisbon noir": {
+      "titulo": "Lisbon Noir",
+      "nota": 5.7,
+      "fecha": "2026-04-24",
+      "notificado": false
     }
   }
 }
