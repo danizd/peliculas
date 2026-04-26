@@ -1841,6 +1841,42 @@
       "nota": 5.7,
       "fecha": "2026-04-24",
       "notificado": false
+    },
+    "the red book ritual gates of hell": {
+      "titulo": "The Red Book Ritual: Gates of Hell",
+      "nota": 0,
+      "fecha": "2026-04-26",
+      "notificado": false
+    },
+    "lilly": {
+      "titulo": "Lilly",
+      "nota": 0,
+      "fecha": "2026-04-26",
+      "notificado": false
+    },
+    "la batalla de oslo": {
+      "titulo": "La batalla de Oslo",
+      "nota": 5.6,
+      "fecha": "2026-04-26",
+      "notificado": false
+    },
+    "cochinas": {
+      "titulo": "Cochinas",
+      "nota": 5.9,
+      "fecha": "2026-04-26",
+      "notificado": false
+    },
+    "el profe": {
+      "titulo": "El profe",
+      "nota": 7.6,
+      "fecha": "2026-04-26",
+      "notificado": true
+    },
+    "clasico americano": {
+      "titulo": "Clasico Americano",
+      "nota": 7.6,
+      "fecha": "2026-04-26",
+      "notificado": true
     }
   }
 }
