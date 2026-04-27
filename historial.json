@@ -1877,6 +1877,30 @@
       "nota": 7.6,
       "fecha": "2026-04-26",
       "notificado": true
+    },
+    "historial delictivo": {
+      "titulo": "Historial delictivo",
+      "nota": 6.1,
+      "fecha": "2026-04-27",
+      "notificado": false
+    },
+    "todos los lados de la cama": {
+      "titulo": "Todos los lados de la cama",
+      "nota": 4.4,
+      "fecha": "2026-04-27",
+      "notificado": false
+    },
+    "depredador dominante": {
+      "titulo": "Depredador dominante",
+      "nota": 5.4,
+      "fecha": "2026-04-27",
+      "notificado": false
+    },
+    "sumar una adiccion cualquiera": {
+      "titulo": "Sumar una adiccion cualquiera",
+      "nota": 5.4,
+      "fecha": "2026-04-27",
+      "notificado": false
     }
   }
 }
