@@ -1901,6 +1901,36 @@
       "nota": 5.4,
       "fecha": "2026-04-27",
       "notificado": false
+    },
+    "a breed apart": {
+      "titulo": "A Breed Apart",
+      "nota": 2.6,
+      "fecha": "2026-04-28",
+      "notificado": false
+    },
+    "la red fantasma": {
+      "titulo": "La red fantasma",
+      "nota": 6.2,
+      "fecha": "2026-04-28",
+      "notificado": false
+    },
+    "oscar shaw": {
+      "titulo": "Oscar Shaw",
+      "nota": 4.1,
+      "fecha": "2026-04-28",
+      "notificado": false
+    },
+    "el matadero acecinados": {
+      "titulo": "El matadero Acecinados",
+      "nota": 4.1,
+      "fecha": "2026-04-28",
+      "notificado": false
+    },
+    "half man": {
+      "titulo": "Half Man",
+      "nota": 6.5,
+      "fecha": "2026-04-28",
+      "notificado": false
     }
   }
 }
