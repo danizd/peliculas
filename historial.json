@@ -1931,6 +1931,18 @@
       "nota": 6.5,
       "fecha": "2026-04-28",
       "notificado": false
+    },
+    "frontera": {
+      "titulo": "Frontera",
+      "nota": 5.6,
+      "fecha": "2026-05-01",
+      "notificado": false
+    },
+    "je m39appelle agneta": {
+      "titulo": "Je m&#39;appelle Agneta",
+      "nota": 5.6,
+      "fecha": "2026-05-01",
+      "notificado": false
     }
   }
 }
