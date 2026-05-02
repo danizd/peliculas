@@ -1943,6 +1943,24 @@
       "nota": 5.6,
       "fecha": "2026-05-01",
       "notificado": false
+    },
+    "el fuego de la venganza": {
+      "titulo": "El fuego de la venganza",
+      "nota": 5.7,
+      "fecha": "2026-05-02",
+      "notificado": false
+    },
+    "la maldicion de widow39s bay 10": {
+      "titulo": "La maldición de Widow&#39;s Bay [10",
+      "nota": 5.7,
+      "fecha": "2026-05-02",
+      "notificado": false
+    },
+    "si los deseos mataran": {
+      "titulo": "Si los deseos mataran",
+      "nota": 5.8,
+      "fecha": "2026-05-02",
+      "notificado": false
     }
   }
 }
