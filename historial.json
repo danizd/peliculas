@@ -1961,6 +1961,60 @@
       "nota": 5.8,
       "fecha": "2026-05-02",
       "notificado": false
+    },
+    "me llamo agneta": {
+      "titulo": "Me llamo Agneta",
+      "nota": 6.1,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "te van a matar": {
+      "titulo": "Te van a matar",
+      "nota": 6.1,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "mi querida senorita": {
+      "titulo": "Mi querida senorita",
+      "nota": 6.2,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "buen camino": {
+      "titulo": "Buen Camino",
+      "nota": 5.4,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "tierra de oro": {
+      "titulo": "Tierra de oro",
+      "nota": 6.4,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "el artista": {
+      "titulo": "El Artista",
+      "nota": 0,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "kabul": {
+      "titulo": "Kabul",
+      "nota": 6.6,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "la maldicion de widows bay": {
+      "titulo": "La maldicion de Widows Bay",
+      "nota": 6.6,
+      "fecha": "2026-05-06",
+      "notificado": false
+    },
+    "te iras al infierno": {
+      "titulo": "Te iras al infierno",
+      "nota": 6.2,
+      "fecha": "2026-05-06",
+      "notificado": false
     }
   }
 }
