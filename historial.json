@@ -2045,6 +2045,12 @@
       "nota": 0,
       "fecha": "2026-05-07",
       "notificado": false
+    },
+    "noche de bodas 2": {
+      "titulo": "Noche de bodas 2",
+      "nota": 5.9,
+      "fecha": "2026-05-08",
+      "notificado": false
     }
   }
 }
