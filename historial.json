@@ -2051,6 +2051,42 @@
       "nota": 5.9,
       "fecha": "2026-05-08",
       "notificado": false
+    },
+    "rondallas": {
+      "titulo": "Rondallas",
+      "nota": 7.0,
+      "fecha": "2026-05-09",
+      "notificado": true
+    },
+    "sorry baby": {
+      "titulo": "Sorry Baby",
+      "nota": 6.6,
+      "fecha": "2026-05-09",
+      "notificado": false
+    },
+    "y entonces huyes": {
+      "titulo": "Y Entonces Huyes",
+      "nota": 0,
+      "fecha": "2026-05-09",
+      "notificado": false
+    },
+    "leyendas": {
+      "titulo": "Leyendas",
+      "nota": 0,
+      "fecha": "2026-05-09",
+      "notificado": false
+    },
+    "rj decker": {
+      "titulo": "RJ Decker",
+      "nota": 0,
+      "fecha": "2026-05-09",
+      "notificado": false
+    },
+    "prisoner": {
+      "titulo": "Prisoner",
+      "nota": 6.9,
+      "fecha": "2026-05-09",
+      "notificado": false
     }
   }
 }
