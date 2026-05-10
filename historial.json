@@ -2087,6 +2087,30 @@
       "nota": 6.9,
       "fecha": "2026-05-09",
       "notificado": false
+    },
+    "the surfer": {
+      "titulo": "The Surfer",
+      "nota": 5.7,
+      "fecha": "2026-05-10",
+      "notificado": false
+    },
+    "ultima oportunidad": {
+      "titulo": "Última oportunidad",
+      "nota": 5.1,
+      "fecha": "2026-05-10",
+      "notificado": false
+    },
+    "la boda": {
+      "titulo": "La boda",
+      "nota": 5.8,
+      "fecha": "2026-05-10",
+      "notificado": false
+    },
+    "capturados": {
+      "titulo": "Capturados",
+      "nota": 0,
+      "fecha": "2026-05-10",
+      "notificado": false
     }
   }
 }
