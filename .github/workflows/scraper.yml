@@ -23,12 +23,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
       - name: Run scraper
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          RATING_THRESHOLD: 7.0
-          PROCESSED_FILE: processed_torrents.json
+          SKIP_TELEGRAM_ON_403: true
+          SCRAPER_METHOD: playwright
+          SCRAPER_DIAGNOSTIC: true
+          PLAYWRIGHT_BROWSER: chromium
+          PLAYWRIGHT_HEADLESS: true
+          PLAYWRIGHT_TIMEOUT_MS: 45000
         run: python scraper.py
 
       - name: Commit and push changes

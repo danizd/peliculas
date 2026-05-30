@@ -18,29 +18,77 @@ from datetime import datetime
 from typing import Any
 from dotenv import load_dotenv
 
+try:
+    from playwright.sync_api import sync_playwright
+except ImportError:
+    sync_playwright = None
+
 # Cargar variables de entorno desde .env (si existe)
 load_dotenv()
 
 # Configuración
-MEJORTORRENT_URL = "https://www40.mejortorrent.eu/torrents"
+MEJORTORRENT_MIRRORS = [
+    "https://www40.mejortorrent.eu/torrents",
+    "https://www43.mejortorrent.eu/torrents",
+    "https://www42.mejortorrent.eu/torrents",
+]
 FILMAFFINITY_SEARCH_URL = "https://www.filmaffinity.com/es/search.php?stext="
 HISTORIAL_FILE = "historial.json"
 MIN_RATING = 7.0
 MAX_PELICULAS_POR_EJECUCION = 20  # Limitar para evitar rate limiting
+SCRAPER_METHOD = os.getenv("SCRAPER_METHOD", "cloudscraper").strip().lower()
+PLAYWRIGHT_BROWSER = os.getenv("PLAYWRIGHT_BROWSER", "chromium").strip().lower()
+PLAYWRIGHT_HEADLESS = os.getenv("PLAYWRIGHT_HEADLESS", "true").strip().lower() not in {
+    "0",
+    "false",
+    "no",
+    "off",
+}
+PLAYWRIGHT_TIMEOUT_MS = int(os.getenv("PLAYWRIGHT_TIMEOUT_MS", "45000"))
+SCRAPER_DIAGNOSTIC = os.getenv("SCRAPER_DIAGNOSTIC", "false").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
+SKIP_TELEGRAM_ON_403 = os.getenv("SKIP_TELEGRAM_ON_403", "true").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
 
 # Headers para simular navegador (más completos para evitar 403)
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept-Encoding": "gzip, deflate, br",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
+    "Referer": "https://www.google.com/",
+    "DNT": "1",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-User": "?1",
+    "Sec-Fetch-Dest": "document",
+    "TE": "trailers",
 }
 
 # Crear sesión persistente para MejorTorrent
 session = requests.Session()
 session.headers.update(HEADERS)
+
+# Crear scraper para MejorTorrent también (bypass Cloudflare / cabeceras más completas)
+mejortorrent_scraper = cloudscraper.create_scraper(
+    browser={
+        'browser': 'chrome',
+        'platform': 'windows',
+        'mobile': False
+    }
+)
+# Asegurar que el scraper para MejorTorrent use nuestras cabeceras
+mejortorrent_scraper.headers.update(HEADERS)
 
 # Crear scraper para FilmAffinity (bypass Cloudflare)
 filmaffinity_scraper = cloudscraper.create_scraper(
@@ -52,9 +100,268 @@ filmaffinity_scraper = cloudscraper.create_scraper(
 )
 
 
+class BrowserFetchResponse:
+    """Respuesta mínima compatible con requests para el modo Playwright."""
+
+    def __init__(self, status_code: int, text: str, url: str, headers: dict | None = None):
+        self.status_code = status_code
+        self.text = text
+        self.url = url
+        self.headers = headers or {}
+
+    def raise_for_status(self) -> None:
+        if self.status_code >= 400:
+            raise requests.HTTPError(
+                f"{self.status_code} Error for url: {self.url}",
+                response=None,
+            )
+
+
+_playwright_manager = None
+_playwright_browser = None
+_playwright_context = None
+_mejortorrent_got_403 = False
+
+
+def get_scraper_method() -> str:
+    """Devuelve el método de scraping configurado."""
+    if SCRAPER_METHOD in {"cloudscraper", "playwright"}:
+        return SCRAPER_METHOD
+    print(f"[!] SCRAPER_METHOD='{SCRAPER_METHOD}' no es válido, usando 'cloudscraper'")
+    return "cloudscraper"
+
+
+def _text_looks_like_challenge(text: str) -> bool:
+    """Detecta indicios típicos de challenge o bloqueo anti-bot."""
+    lowered = text.lower()
+    markers = [
+        "just a moment",
+        "attention required",
+        "checking your browser",
+        "cloudflare",
+        "captcha",
+        "cf-mitigated",
+        "verify you are human",
+        "access denied",
+        "forbidden",
+    ]
+    return any(marker in lowered for marker in markers)
+
+
+def _log_mejortorrent_diagnostic(url: str, response: Any, method: str) -> None:
+    """Imprime señales útiles para entender por qué MejorTorrent bloquea."""
+    if not SCRAPER_DIAGNOSTIC:
+        return
+
+    headers = getattr(response, "headers", {}) or {}
+    text = getattr(response, "text", "") or ""
+    header_bits = []
+    for key in ("server", "cf-ray", "cf-mitigated", "content-type"):
+        value = headers.get(key) or headers.get(key.title()) or headers.get(key.upper())
+        if value:
+            header_bits.append(f"{key}={value}")
+
+    challenge_hint = _text_looks_like_challenge(text)
+    snippet = re.sub(r"\s+", " ", text[:220]).strip()
+    print(f"  [diag] method={method} url={url} status={getattr(response, 'status_code', 'n/a')} headless={PLAYWRIGHT_HEADLESS}")
+    if header_bits:
+        print(f"  [diag] headers: {', '.join(header_bits)}")
+    print(f"  [diag] challenge-like={challenge_hint}")
+    if snippet:
+        print(f"  [diag] snippet: {snippet}")
+
+
+def telegram_notifications_enabled() -> bool:
+    """Indica si se deben enviar notificaciones a Telegram."""
+    if SKIP_TELEGRAM_ON_403 and _mejortorrent_got_403:
+        return False
+    return True
+
+
+def _get_playwright_browser_launcher():
+    """Obtiene el lanzador del navegador según la configuración."""
+    if sync_playwright is None:
+        raise RuntimeError(
+            "Playwright no está instalado. Instala 'playwright' y ejecuta 'python -m playwright install chromium'."
+        )
+
+    manager = sync_playwright().start()
+
+    if PLAYWRIGHT_BROWSER == "chromium":
+        browser_launcher = manager.chromium
+    elif PLAYWRIGHT_BROWSER == "firefox":
+        browser_launcher = manager.firefox
+    elif PLAYWRIGHT_BROWSER == "webkit":
+        browser_launcher = manager.webkit
+    else:
+        manager.stop()
+        raise RuntimeError(
+            f"Navegador Playwright no soportado: {PLAYWRIGHT_BROWSER}. Usa chromium, firefox o webkit."
+        )
+
+    return manager, browser_launcher
+
+
+def get_playwright_context():
+    """Crea o reutiliza un contexto de navegador para Playwright."""
+    global _playwright_manager, _playwright_browser, _playwright_context
+
+    if _playwright_context is not None:
+        return _playwright_context
+
+    manager, browser_launcher = _get_playwright_browser_launcher()
+    safe_headers = {
+        key: value
+        for key, value in HEADERS.items()
+        if key not in {"Connection", "Accept-Encoding", "TE"}
+    }
+
+    _playwright_manager = manager
+    _playwright_browser = browser_launcher.launch(headless=PLAYWRIGHT_HEADLESS)
+    _playwright_context = _playwright_browser.new_context(
+        user_agent=HEADERS["User-Agent"],
+        locale="es-ES",
+        timezone_id="Europe/Madrid",
+        viewport={"width": 1365, "height": 768},
+        ignore_https_errors=True,
+        extra_http_headers=safe_headers,
+    )
+    return _playwright_context
+
+
+def close_scraper_resources() -> None:
+    """Cierra recursos del navegador si se está usando Playwright."""
+    global _playwright_manager, _playwright_browser, _playwright_context
+
+    if _playwright_context is not None:
+        _playwright_context.close()
+        _playwright_context = None
+
+    if _playwright_browser is not None:
+        _playwright_browser.close()
+        _playwright_browser = None
+
+    if _playwright_manager is not None:
+        _playwright_manager.stop()
+        _playwright_manager = None
+
+
+def fetch_page_with_method(client: Any, url: str, timeout: int, method: str):
+    """Obtiene una página con un método concreto de scraping."""
+    if method == "playwright":
+        try:
+            context = get_playwright_context()
+            page = context.new_page()
+            try:
+                response = page.goto(url, wait_until="domcontentloaded", timeout=PLAYWRIGHT_TIMEOUT_MS)
+                status_code = response.status if response else 200
+
+                if status_code in {403, 503}:
+                    wait_time = random.randint(4, 8) * 1000
+                    page.wait_for_timeout(wait_time)
+
+                    parsed_url = requests.utils.urlparse(url)
+                    origin = f"{parsed_url.scheme}://{parsed_url.netloc}"
+                    page.goto(origin, wait_until="domcontentloaded", timeout=PLAYWRIGHT_TIMEOUT_MS)
+                    page.wait_for_timeout(wait_time)
+
+                    response = page.goto(url, wait_until="networkidle", timeout=PLAYWRIGHT_TIMEOUT_MS)
+                    status_code = response.status if response else 200
+
+                response_headers = response.headers if response else {}
+                return BrowserFetchResponse(status_code, page.content(), page.url, response_headers)
+            finally:
+                page.close()
+        except Exception as exc:
+            raise requests.RequestException(str(exc)) from exc
+
+    return client.get(url, timeout=timeout)
+
+
+def fetch_page(client: Any, url: str, timeout: int = 15):
+    """Obtiene una página con el método configurado y hace fallback automático al alternativo."""
+    preferred_method = get_scraper_method()
+    fallback_method = "cloudscraper" if preferred_method == "playwright" else "playwright"
+    last_response = None
+    last_error = None
+
+    for method in (preferred_method, fallback_method):
+        try:
+            response = fetch_page_with_method(client, url, timeout, method)
+            last_response = response
+
+            if response.status_code not in {403, 503}:
+                if method != preferred_method:
+                    print(f"  [*] Fallback aplicado: {preferred_method} -> {method}")
+                return response
+
+            print(f"  [!] Método {method} devolvió {response.status_code} para {url}")
+        except Exception as exc:
+            last_error = exc
+            print(f"  [!] Método {method} falló para {url}: {exc}")
+
+    if last_response is not None:
+        return last_response
+
+    if last_error is not None:
+        raise requests.RequestException(str(last_error)) from last_error
+
+    raise requests.RequestException(f"No se pudo obtener la página: {url}")
+
+
+def fetch_mejortorrent_page(url: str, timeout: int = 15):
+    """Obtiene MejorTorrent con fallback automático y diagnóstico opcional."""
+    preferred_method = get_scraper_method()
+    fallback_method = "cloudscraper" if preferred_method == "playwright" else "playwright"
+    methods = [preferred_method]
+    if fallback_method != preferred_method:
+        methods.append(fallback_method)
+
+    last_response = None
+    last_error = None
+
+    for method in methods:
+        client = mejortorrent_scraper if method == "cloudscraper" else None
+        try:
+            response = fetch_page_with_method(client, url, timeout, method)
+            last_response = response
+            _log_mejortorrent_diagnostic(url, response, method)
+
+            if response.status_code in {403, 503}:
+                print(f"  [!] Método {method} devolvió {response.status_code} para MejorTorrent")
+                continue
+
+            if method != preferred_method:
+                print(f"  [*] Fallback aplicado en MejorTorrent: {preferred_method} -> {method}")
+
+            return response
+        except Exception as exc:
+            last_error = exc
+            print(f"  [!] Método {method} falló para MejorTorrent: {exc}")
+
+    if last_response is not None:
+        return last_response
+
+    if last_error is not None:
+        raise requests.RequestException(str(last_error)) from last_error
+
+    raise requests.RequestException(f"No se pudo obtener la página de MejorTorrent: {url}")
+
+
 def init_filmaffinity_session() -> bool:
-    """Inicializa la sesión de FilmAffinity (ya no es necesario con cloudscraper)."""
-    print("[OK] Scraper de FilmAffinity listo (cloudscraper)")
+    """Inicializa el método de scraping configurado."""
+    method = get_scraper_method()
+
+    if method == "playwright":
+        try:
+            get_playwright_context()
+            print("[OK] Scraper listo (Playwright)")
+            return True
+        except Exception as exc:
+            print(f"[!] No se pudo iniciar Playwright: {exc}")
+            return False
+
+    print("[OK] Scraper listo (cloudscraper)")
     return True
 
 
@@ -73,6 +380,10 @@ def get_telegram_config():
 
 def send_telegram_message(token: str, chat_id: str, message: str) -> bool:
     """Envía un mensaje a Telegram."""
+    if not telegram_notifications_enabled():
+        print("[!] Telegram deshabilitado porque MejorTorrent devolvió 403")
+        return False
+
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
@@ -91,17 +402,37 @@ def send_telegram_message(token: str, chat_id: str, message: str) -> bool:
 
 def get_mejortorrent_titles() -> list[dict]:
     """Obtiene los títulos de películas y series de MejorTorrent."""
+    global _mejortorrent_got_403
+
     titles = []
     
     try:
-        response = session.get(MEJORTORRENT_URL, timeout=15)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
-        
+        soup = None
+        # Probar varios espejos en orden hasta obtener respuesta válida
+        for mirror in MEJORTORRENT_MIRRORS:
+            try:
+                print(f"[*] Intentando MejorTorrent: {mirror}")
+                response = fetch_mejortorrent_page(mirror, timeout=15)
+                if response.status_code == 403:
+                    _mejortorrent_got_403 = True
+                    print(f"  [!] 403 Forbidden en {mirror}, probando siguiente espejo...")
+                    continue
+                response.raise_for_status()
+                soup = BeautifulSoup(response.text, "html.parser")
+                print(f"  [OK] Accedido a {mirror}")
+                break
+            except requests.RequestException as e:
+                print(f"  [!] Error accediendo a {mirror}: {e}")
+                continue
+
+        if not soup:
+            print("[X] No se pudo acceder a ningun espejo de MejorTorrent")
+            return titles
+
         # Buscar enlaces de películas y series (estructura actual de MejorTorrent)
         # Los enlaces tienen formato: /pelicula/ID/nombre o /serie/ID/ID/nombre
         links = soup.select("a[href*='/pelicula/'], a[href*='/serie/']")
-        
+
         seen = set()
         for link in links:
             href = str(link.get("href", ""))
@@ -125,10 +456,10 @@ def get_mejortorrent_titles() -> list[dict]:
                     })
         
         print(f"[+] Encontrados {len(titles)} titulos en MejorTorrent")
-        
+
     except requests.RequestException as e:
-        print(f"Error accediendo a MejorTorrent: {e}")
-    
+        print(f"Error procesando MejorTorrent: {e}")
+
     return titles
 
 
@@ -225,7 +556,7 @@ def search_filmaffinity(title: str, retries: int = 3) -> dict | None:
             delay = random.uniform(3, 6) if attempt == 0 else random.uniform(10, 20)
             time.sleep(delay)
             
-            response = filmaffinity_scraper.get(search_url, timeout=15)
+            response = fetch_page(filmaffinity_scraper, search_url, timeout=15)
             
             # Si es 429 (Too Many Requests), esperar mucho más
             if response.status_code == 429:
@@ -298,13 +629,13 @@ def get_filmaffinity_details(url: str) -> dict | None:
         # Delay antes de cada petición de detalles
         time.sleep(random.uniform(2, 4))
         
-        response = filmaffinity_scraper.get(url, timeout=15)
+        response = fetch_page(filmaffinity_scraper, url, timeout=15)
         
         # Manejar rate limiting también aquí
         if response.status_code == 429:
             print(f"  [!] Rate limit en detalles, esperando 30s...")
             time.sleep(30)
-            response = filmaffinity_scraper.get(url, timeout=15)
+            response = fetch_page(filmaffinity_scraper, url, timeout=15)
         
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
@@ -566,6 +897,8 @@ def main():
                 print("[OK] Notificación de error enviada")
         
         raise
+    finally:
+        close_scraper_resources()
 
 
 if __name__ == "__main__":
