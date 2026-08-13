@@ -2111,6 +2111,126 @@
       "nota": 0,
       "fecha": "2026-05-10",
       "notificado": false
+    },
+    "marsupilami": {
+      "titulo": "Marsupilami",
+      "nota": 5.8,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "kangaroo una aventura en australia": {
+      "titulo": "Kangaroo: Una aventura en Australia",
+      "nota": 0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "manual para superheroes la mascara roja": {
+      "titulo": "Manual para superhéroes: La máscara roja",
+      "nota": 0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "katseye wild hearts": {
+      "titulo": "Katseye: Wild Hearts",
+      "nota": 0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "nimrods a green day comedy": {
+      "titulo": "Nimrods: A Green Day Comedy",
+      "nota": 0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "el ultimo mono": {
+      "titulo": "El último mono",
+      "nota": 2.8,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "la patrulla canina la dino pelicula": {
+      "titulo": "La Patrulla Canina: La dino película",
+      "nota": 5.0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "en mar abierto": {
+      "titulo": "En mar abierto",
+      "nota": 5.0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "el amor que permanece": {
+      "titulo": "El amor que permanece",
+      "nota": 6.4,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "el sindrome rembrandt": {
+      "titulo": "El síndrome Rembrandt",
+      "nota": 4.5,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "la ventana abierta": {
+      "titulo": "La ventana abierta",
+      "nota": 5.1,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "hijos del cielo": {
+      "titulo": "Hijos del cielo",
+      "nota": 0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "mother mary": {
+      "titulo": "Mother Mary",
+      "nota": 5.2,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "la ultima ronda en venecia": {
+      "titulo": "La última ronda en Venecia",
+      "nota": 6.2,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "mala bestia": {
+      "titulo": "Mala bestia",
+      "nota": 5.3,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "spider man brand new day": {
+      "titulo": "Spider Man: Brand New Day",
+      "nota": 7.2,
+      "fecha": "2026-08-13",
+      "notificado": true
+    },
+    "atrapa el millon": {
+      "titulo": "Atrapa el millón",
+      "nota": 5.0,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "tres de mas": {
+      "titulo": "Tres de más",
+      "nota": 5.2,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "insaciable": {
+      "titulo": "Insaciable",
+      "nota": 5.6,
+      "fecha": "2026-08-13",
+      "notificado": false
+    },
+    "el sueno americano": {
+      "titulo": "El sueño americano",
+      "nota": 6.6,
+      "fecha": "2026-08-13",
+      "notificado": false
     }
   }
 }
