@@ -1,50 +1,52 @@
-# Notificador de películas - MejorTorrent + FilmAffinity
+# Notificador de películas - FilmAffinity
 
 Este repositorio contiene un script (`scraper.py`) que:
-- Obtiene títulos de películas/series desde MejorTorrent.
-- Busca la nota y detalles en FilmAffinity.
+- Obtiene títulos de películas y series de las secciones de novedades de FilmAffinity (cartelera de cines de España y novedades de Netflix).
+- Extrae la nota, género y plataformas de cada ficha en FilmAffinity.
 - Envía notificaciones por Telegram cuando la nota es >= 7.
 - Guarda un historial (`historial.json`) para no procesar duplicados.
 
-Ejecución local
-- Activar el entorno virtual:
-  & .\env-peliculas\Scripts\Activate.ps1
-- Instalar dependencias (si no están):
-  pip install -r requirements.txt
-- Establecer variables de entorno (opcional):
-  TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID y SCRAPER_METHOD
-- Ejecutar el scraper:
-  python -u scraper.py
+> Nota: antes la fuente de títulos era MejorTorrent, pero su WAF de Cloudflare
+> (challenge anti-bot) bloquea todas las peticiones automatizadas, incluso con
+> Playwright. FilmAffinity es accesible sin bloqueos y además aporta la nota
+> directamente, así que se usa como fuente única.
 
-Configuración del método de scraping
-- `SCRAPER_METHOD=cloudscraper`: mantiene el comportamiento actual con `cloudscraper`.
-- `SCRAPER_METHOD=playwright`: usa un navegador real headless para resolver mejor bloqueos antibot.
+## Ejecución local
+
+- Activar el entorno virtual:
+  `& .\env-peliculas\Scripts\Activate.ps1`
+- Instalar dependencias (si no están):
+  `pip install -r requirements.txt`
+- Establecer variables de entorno (opcional):
+  `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID`
+- Ejecutar el scraper:
+  `python -u scraper.py`
+
+## Configuración del método de scraping
+
+- `SCRAPER_METHOD=cloudscraper` (por defecto): peticiones HTTP con `cloudscraper`.
+- `SCRAPER_METHOD=playwright`: usa un navegador real headless, útil si FilmAffinity empieza a bloquear.
 - Si usas Playwright por primera vez, instala también los navegadores:
   `python -m playwright install chromium`
-- `SCRAPER_DIAGNOSTIC=true`: imprime pistas para distinguir challenge, bloqueo o respuesta vacía en MejorTorrent.
 
-Ejecución automática (GitHub Actions)
-El proyecto se ejecutaba mediante un workflow de GitHub Actions. Un "workflow" es una automatización configurada en el repositorio que puede ejecutar scripts en servidores de GitHub (runners) según un trigger (por ejemplo: programación cron, push, release). Esto permitía comprobar periódicamente nuevos torrents y enviar notificaciones sin mantener un servidor propio.
+## Fuente de títulos
 
-Por qué funcionó antes y ahora falla
-- Actualmente las peticiones a MejorTorrent responden con `403 Forbidden` y headers indicando `Cf-Mitigated: challenge`. Eso significa que Cloudflare está aplicando un challenge (JavaScript/Client Hints) que requiere ejecución de código en el navegador para resolverlo.
-- Antes el site aceptaba peticiones simuladas por `requests`/`cloudscraper` o el challenge no estaba activo; ahora se exige una sesión de navegador real (o cookies válidas/headers específicos). En resumen: el bloqueo proviene de medidas anti-bot/WAF y no de un bug en el script.
+Las secciones de FilmAffinity que se consultan están en `FILMAFFINITY_NEW_SOURCES` dentro de `scraper.py`:
 
-Soluciones y opciones
-- Usar un navegador real headless (Playwright o Selenium) para que se ejecute el JavaScript y se resuelva el challenge. Recomendado y más fiable.
-- Reutilizar cookies y cabeceras del navegador (frágil: caducan y se rompen con frecuencia).
-- Usar proxies/rotación de IPs si el bloqueo es por IP.
-- Copiar la lógica de acceso del navegador (client hints, Sec-CH-*), pero esto suele ser temporal y poco robusto.
+- `https://www.filmaffinity.com/es/cat_new_th_es.html` — Cartelera cines España
+- `https://www.filmaffinity.com/es/cat_new_netflix.html` — Novedades Netflix
 
-Siguientes pasos sugeridos
-- Integrar Playwright para obtener el HTML de la página de torrents y pasar ese HTML al parser actual.
-- O bien, si prefieres, exporto instrucciones para copiar cookies del navegador y probar con `cloudscraper`.
+Puedes añadir más secciones (p. ej. `cat_new_amazon_es.html`, `cat_new_hbo_es.html`) añadiendo la URL a esa lista.
 
-Archivo principal: `scraper.py`
+## Ejecución automática (GitHub Actions)
 
-Si quieres, puedo:
-- Añadir un script de ejemplo con Playwright y actualizar `scraper.py` para usarlo, o
-- Generar instrucciones para reproducir las cabeceras/cookies del navegador.
+El proyecto se ejecuta a diario mediante un workflow de GitHub Actions (`.github/workflows/scraper.yml`):
+1. Instala dependencias y el navegador de Playwright.
+2. Ejecuta `scraper.py` con `SCRAPER_METHOD=cloudscraper`.
+3. Hace commit de `historial.json` actualizado.
 
----
-Fecha: 2026-05-30
+Los secretos `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` deben estar configurados en Settings → Secrets and variables → Actions del repositorio.
+
+## Estructura del historial
+
+`historial.json` guarda una entrada por título ya analizado (clave = título normalizado) con su nota, fecha y si fue notificado. Así el scraper no vuelve a notificar películas ya vistas.

@@ -30,9 +30,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          SKIP_TELEGRAM_ON_403: true
-          SCRAPER_METHOD: playwright
-          SCRAPER_DIAGNOSTIC: true
+          SCRAPER_METHOD: cloudscraper
           PLAYWRIGHT_BROWSER: chromium
           PLAYWRIGHT_HEADLESS: true
           PLAYWRIGHT_TIMEOUT_MS: 45000

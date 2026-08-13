@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Script para obtener películas/series de MejorTorrent,
-buscar sus notas en FilmAffinity y notificar por Telegram
-si la nota es superior a 7.
+Script para obtener películas/series de las secciones de novedades
+de FilmAffinity (cartelera de cines y catálogos de streaming),
+buscar sus notas y notificar por Telegram si la nota es superior a 7.
 """
 
 import os
@@ -27,10 +27,11 @@ except ImportError:
 load_dotenv()
 
 # Configuración
-MEJORTORRENT_MIRRORS = [
-    "https://www40.mejortorrent.eu/torrents",
-    "https://www43.mejortorrent.eu/torrents",
-    "https://www42.mejortorrent.eu/torrents",
+# Secciones de novedades de FilmAffinity usadas como fuente de títulos
+# (cartelera de cines y catálogos de streaming con títulos recientes)
+FILMAFFINITY_NEW_SOURCES = [
+    "https://www.filmaffinity.com/es/cat_new_th_es.html",  # Cartelera cines España
+    "https://www.filmaffinity.com/es/cat_new_netflix.html",  # Novedades Netflix
 ]
 FILMAFFINITY_SEARCH_URL = "https://www.filmaffinity.com/es/search.php?stext="
 HISTORIAL_FILE = "historial.json"
@@ -45,22 +46,10 @@ PLAYWRIGHT_HEADLESS = os.getenv("PLAYWRIGHT_HEADLESS", "true").strip().lower() n
     "off",
 }
 PLAYWRIGHT_TIMEOUT_MS = int(os.getenv("PLAYWRIGHT_TIMEOUT_MS", "45000"))
-SCRAPER_DIAGNOSTIC = os.getenv("SCRAPER_DIAGNOSTIC", "false").strip().lower() in {
-    "1",
-    "true",
-    "yes",
-    "on",
-}
-SKIP_TELEGRAM_ON_403 = os.getenv("SKIP_TELEGRAM_ON_403", "true").strip().lower() in {
-    "1",
-    "true",
-    "yes",
-    "on",
-}
 
 # Headers para simular navegador (más completos para evitar 403)
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.7922.137 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
@@ -75,20 +64,9 @@ HEADERS = {
     "TE": "trailers",
 }
 
-# Crear sesión persistente para MejorTorrent
+# Crear sesión persistente
 session = requests.Session()
 session.headers.update(HEADERS)
-
-# Crear scraper para MejorTorrent también (bypass Cloudflare / cabeceras más completas)
-mejortorrent_scraper = cloudscraper.create_scraper(
-    browser={
-        'browser': 'chrome',
-        'platform': 'windows',
-        'mobile': False
-    }
-)
-# Asegurar que el scraper para MejorTorrent use nuestras cabeceras
-mejortorrent_scraper.headers.update(HEADERS)
 
 # Crear scraper para FilmAffinity (bypass Cloudflare)
 filmaffinity_scraper = cloudscraper.create_scraper(
@@ -120,7 +98,6 @@ class BrowserFetchResponse:
 _playwright_manager = None
 _playwright_browser = None
 _playwright_context = None
-_mejortorrent_got_403 = False
 
 
 def get_scraper_method() -> str:
@@ -129,53 +106,6 @@ def get_scraper_method() -> str:
         return SCRAPER_METHOD
     print(f"[!] SCRAPER_METHOD='{SCRAPER_METHOD}' no es válido, usando 'cloudscraper'")
     return "cloudscraper"
-
-
-def _text_looks_like_challenge(text: str) -> bool:
-    """Detecta indicios típicos de challenge o bloqueo anti-bot."""
-    lowered = text.lower()
-    markers = [
-        "just a moment",
-        "attention required",
-        "checking your browser",
-        "cloudflare",
-        "captcha",
-        "cf-mitigated",
-        "verify you are human",
-        "access denied",
-        "forbidden",
-    ]
-    return any(marker in lowered for marker in markers)
-
-
-def _log_mejortorrent_diagnostic(url: str, response: Any, method: str) -> None:
-    """Imprime señales útiles para entender por qué MejorTorrent bloquea."""
-    if not SCRAPER_DIAGNOSTIC:
-        return
-
-    headers = getattr(response, "headers", {}) or {}
-    text = getattr(response, "text", "") or ""
-    header_bits = []
-    for key in ("server", "cf-ray", "cf-mitigated", "content-type"):
-        value = headers.get(key) or headers.get(key.title()) or headers.get(key.upper())
-        if value:
-            header_bits.append(f"{key}={value}")
-
-    challenge_hint = _text_looks_like_challenge(text)
-    snippet = re.sub(r"\s+", " ", text[:220]).strip()
-    print(f"  [diag] method={method} url={url} status={getattr(response, 'status_code', 'n/a')} headless={PLAYWRIGHT_HEADLESS}")
-    if header_bits:
-        print(f"  [diag] headers: {', '.join(header_bits)}")
-    print(f"  [diag] challenge-like={challenge_hint}")
-    if snippet:
-        print(f"  [diag] snippet: {snippet}")
-
-
-def telegram_notifications_enabled() -> bool:
-    """Indica si se deben enviar notificaciones a Telegram."""
-    if SKIP_TELEGRAM_ON_403 and _mejortorrent_got_403:
-        return False
-    return True
 
 
 def _get_playwright_browser_launcher():
@@ -226,6 +156,7 @@ def get_playwright_context():
         ignore_https_errors=True,
         extra_http_headers=safe_headers,
     )
+
     return _playwright_context
 
 
@@ -309,45 +240,6 @@ def fetch_page(client: Any, url: str, timeout: int = 15):
     raise requests.RequestException(f"No se pudo obtener la página: {url}")
 
 
-def fetch_mejortorrent_page(url: str, timeout: int = 15):
-    """Obtiene MejorTorrent con fallback automático y diagnóstico opcional."""
-    preferred_method = get_scraper_method()
-    fallback_method = "cloudscraper" if preferred_method == "playwright" else "playwright"
-    methods = [preferred_method]
-    if fallback_method != preferred_method:
-        methods.append(fallback_method)
-
-    last_response = None
-    last_error = None
-
-    for method in methods:
-        client = mejortorrent_scraper if method == "cloudscraper" else None
-        try:
-            response = fetch_page_with_method(client, url, timeout, method)
-            last_response = response
-            _log_mejortorrent_diagnostic(url, response, method)
-
-            if response.status_code in {403, 503}:
-                print(f"  [!] Método {method} devolvió {response.status_code} para MejorTorrent")
-                continue
-
-            if method != preferred_method:
-                print(f"  [*] Fallback aplicado en MejorTorrent: {preferred_method} -> {method}")
-
-            return response
-        except Exception as exc:
-            last_error = exc
-            print(f"  [!] Método {method} falló para MejorTorrent: {exc}")
-
-    if last_response is not None:
-        return last_response
-
-    if last_error is not None:
-        raise requests.RequestException(str(last_error)) from last_error
-
-    raise requests.RequestException(f"No se pudo obtener la página de MejorTorrent: {url}")
-
-
 def init_filmaffinity_session() -> bool:
     """Inicializa el método de scraping configurado."""
     method = get_scraper_method()
@@ -380,10 +272,6 @@ def get_telegram_config():
 
 def send_telegram_message(token: str, chat_id: str, message: str) -> bool:
     """Envía un mensaje a Telegram."""
-    if not telegram_notifications_enabled():
-        print("[!] Telegram deshabilitado porque MejorTorrent devolvió 403")
-        return False
-
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         "chat_id": chat_id,
@@ -400,66 +288,48 @@ def send_telegram_message(token: str, chat_id: str, message: str) -> bool:
         return False
 
 
-def get_mejortorrent_titles() -> list[dict]:
-    """Obtiene los títulos de películas y series de MejorTorrent."""
-    global _mejortorrent_got_403
-
+def get_filmaffinity_new_titles() -> list[dict]:
+    """Obtiene títulos de películas y series desde las secciones de novedades de FilmAffinity."""
     titles = []
-    
-    try:
-        soup = None
-        # Probar varios espejos en orden hasta obtener respuesta válida
-        for mirror in MEJORTORRENT_MIRRORS:
-            try:
-                print(f"[*] Intentando MejorTorrent: {mirror}")
-                response = fetch_mejortorrent_page(mirror, timeout=15)
-                if response.status_code == 403:
-                    _mejortorrent_got_403 = True
-                    print(f"  [!] 403 Forbidden en {mirror}, probando siguiente espejo...")
+    seen_urls = set()
+
+    for source_url in FILMAFFINITY_NEW_SOURCES:
+        try:
+            print(f"[*] Obteniendo novedades de FilmAffinity: {source_url}")
+            response = fetch_page(filmaffinity_scraper, source_url, timeout=20)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+
+            cards = soup.select("div[data-movie-id]")
+            encontrados = 0
+            for card in cards:
+                link = card.select_one("a[href*='/es/film'], a[href*='/es/series']")
+                if not link:
                     continue
-                response.raise_for_status()
-                soup = BeautifulSoup(response.text, "html.parser")
-                print(f"  [OK] Accedido a {mirror}")
-                break
-            except requests.RequestException as e:
-                print(f"  [!] Error accediendo a {mirror}: {e}")
-                continue
+                url = str(link.get("href", "")).strip()
+                title = (link.get("title") or link.get_text(strip=True) or "").strip()
+                if not url or not title:
+                    continue
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
 
-        if not soup:
-            print("[X] No se pudo acceder a ningun espejo de MejorTorrent")
-            return titles
-
-        # Buscar enlaces de películas y series (estructura actual de MejorTorrent)
-        # Los enlaces tienen formato: /pelicula/ID/nombre o /serie/ID/ID/nombre
-        links = soup.select("a[href*='/pelicula/'], a[href*='/serie/']")
-
-        seen = set()
-        for link in links:
-            href = str(link.get("href", ""))
-            
-            # Filtrar enlaces de navegación (los que no tienen ID numérico)
-            if not re.search(r'/(pelicula|serie)/\d+', href):
-                continue
-            
-            title = link.get_text(strip=True)
-            
-            # Filtrar títulos válidos (evitar vacíos o muy cortos)
-            if title and len(title) > 3 and title not in seen:
-                # Limpiar título (quitar año, calidad, etc. para búsqueda)
                 clean_title = clean_title_for_search(title)
-                if clean_title:
-                    seen.add(title)
-                    titles.append({
-                        "original_title": title,
-                        "clean_title": clean_title,
-                        "url": href
-                    })
-        
-        print(f"[+] Encontrados {len(titles)} titulos en MejorTorrent")
+                if not clean_title:
+                    continue
+                titles.append({
+                    "original_title": title,
+                    "clean_title": clean_title,
+                    "url": url,
+                })
+                encontrados += 1
 
-    except requests.RequestException as e:
-        print(f"Error procesando MejorTorrent: {e}")
+            print(f"  [OK] {encontrados} títulos desde {source_url}")
+        except requests.RequestException as e:
+            print(f"  [!] Error accediendo a {source_url}: {e}")
+            continue
 
+    print(f"[+] Encontrados {len(titles)} títulos en FilmAffinity")
     return titles
 
 
@@ -683,7 +553,7 @@ def extract_movie_info(soup: BeautifulSoup, url: str) -> dict[str, Any] | None:
     info["rating"] = extract_rating(soup)
     
     # Género
-    genre_elem = soup.select_one('[itemprop="genre"], .genres span, dd:contains("Género")')
+    genre_elem = soup.select_one('[itemprop="genre"], .genres span, dd:-soup-contains("Género")')
     if not genre_elem:
         # Buscar en la estructura de FilmAffinity
         for dt in soup.select("dt"):
@@ -725,7 +595,7 @@ def format_telegram_message(movie_info: dict, original_title: str) -> str:
 <b>Disponible en:</b> {platforms_str}
 
 🔗 <a href="{movie_info.get('url', '')}">Ver en FilmAffinity</a>
-📥 Encontrada en MejorTorrent
+📥 Nueva en FilmAffinity
 """
     return message
 
@@ -787,17 +657,17 @@ def main():
                 send_telegram_message(telegram_token, telegram_chat_id, format_error_message(error_msg))
             return
         
-        # Obtener títulos de MejorTorrent
-        titles = get_mejortorrent_titles()
+        # Obtener títulos de las secciones de novedades de FilmAffinity
+        titles = get_filmaffinity_new_titles()
         
         if not titles:
-            print("[X] No se encontraron titulos en MejorTorrent")
-            error_msg = "No se encontraron títulos en MejorTorrent"
+            print("[X] No se encontraron titulos en FilmAffinity")
+            error_msg = "No se encontraron títulos en FilmAffinity"
             if telegram_token and telegram_chat_id:
                 send_telegram_message(telegram_token, telegram_chat_id, format_error_message(error_msg))
             return
         
-        # Buscar cada título en FilmAffinity
+        # Analizar cada título en FilmAffinity
         good_movies = []
         nuevas_analizadas = 0
         saltadas = 0
@@ -822,10 +692,15 @@ def main():
         
         for i, title_info in enumerate(titulos_a_procesar, 1):
             clean_title = title_info['clean_title']
+            url = title_info.get('url', '')
             
             print(f"[{i}/{len(titulos_a_procesar)}] Buscando: {clean_title}")
             
-            movie_info = search_filmaffinity(clean_title)
+            # Como ya tenemos la URL exacta desde el listado, evitamos la búsqueda
+            if url:
+                movie_info = get_filmaffinity_details(url)
+            else:
+                movie_info = search_filmaffinity(clean_title)
             
             if movie_info and movie_info.get("rating"):
                 rating = movie_info["rating"]
