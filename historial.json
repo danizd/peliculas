@@ -2231,6 +2231,126 @@
       "nota": 6.6,
       "fecha": "2026-08-13",
       "notificado": false
+    },
+    "el final de oak street": {
+      "titulo": "El final de Oak Street",
+      "nota": 6.6,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "cuenta atras": {
+      "titulo": "Cuenta atrás",
+      "nota": 5.8,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "palestina 36": {
+      "titulo": "Palestina 36",
+      "nota": 6.8,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "esteoeste": {
+      "titulo": "Este/Oeste",
+      "nota": 5.7,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "dias de agosto": {
+      "titulo": "Días de agosto",
+      "nota": 0,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "vivir la tierra": {
+      "titulo": "Vivir la tierra",
+      "nota": 6.6,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "batwara": {
+      "titulo": "Batwara",
+      "nota": 0,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "motor city": {
+      "titulo": "Motor City",
+      "nota": 6.5,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "el anfitrion": {
+      "titulo": "El anfitrión",
+      "nota": 4.8,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "rufus la serpiente que no sabia nadar": {
+      "titulo": "Rufus, la serpiente que no sabía nadar",
+      "nota": 0,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "el mensaje": {
+      "titulo": "El mensaje",
+      "nota": 5.4,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "la ultima travesia": {
+      "titulo": "La última travesía",
+      "nota": 6.8,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "nicky la aprendiz de bruja": {
+      "titulo": "Nicky, la aprendiz de bruja",
+      "nota": 7.1,
+      "fecha": "2026-08-14",
+      "notificado": true
+    },
+    "jumbo": {
+      "titulo": "Jumbo",
+      "nota": 0,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "la danza del leon maestros del combate": {
+      "titulo": "La danza del león: Maestros del combate",
+      "nota": 0,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "la mujer de la fila": {
+      "titulo": "La mujer de la fila",
+      "nota": 6.3,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "la odisea": {
+      "titulo": "La odisea",
+      "nota": 7.6,
+      "fecha": "2026-08-14",
+      "notificado": true
+    },
+    "posesion infernal en llamas": {
+      "titulo": "Posesión infernal: En llamas",
+      "nota": 6.1,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "ni contigo ni sin mi": {
+      "titulo": "Ni contigo ni sin mí",
+      "nota": 3.6,
+      "fecha": "2026-08-14",
+      "notificado": false
+    },
+    "omaha": {
+      "titulo": "Omaha",
+      "nota": 6.8,
+      "fecha": "2026-08-14",
+      "notificado": false
     }
   }
 }
