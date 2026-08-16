@@ -2471,6 +2471,126 @@
       "nota": 5.5,
       "fecha": "2026-08-15",
       "notificado": false
+    },
+    "dia de caza": {
+      "titulo": "Día de caza",
+      "nota": 5.4,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "akira": {
+      "titulo": "Akira",
+      "nota": 7.6,
+      "fecha": "2026-08-16",
+      "notificado": true
+    },
+    "lady nazca": {
+      "titulo": "Lady Nazca",
+      "nota": 6.3,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "minions monsters": {
+      "titulo": "Minions & Monsters",
+      "nota": 5.8,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "supergirl": {
+      "titulo": "Supergirl",
+      "nota": 5.2,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "obsession": {
+      "titulo": "Obsession",
+      "nota": 7.0,
+      "fecha": "2026-08-16",
+      "notificado": true
+    },
+    "viaje al pais de los blancos": {
+      "titulo": "Viaje al país de los blancos",
+      "nota": 6.9,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "toy story 5": {
+      "titulo": "Toy Story 5",
+      "nota": 6.9,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "el dia de la revelacion": {
+      "titulo": "El día de la revelación",
+      "nota": 5.8,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "backrooms": {
+      "titulo": "Backrooms",
+      "nota": 6.4,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "la luz": {
+      "titulo": "La luz",
+      "nota": 7.0,
+      "fecha": "2026-08-16",
+      "notificado": true
+    },
+    "el drama": {
+      "titulo": "El drama",
+      "nota": 6.7,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "michael": {
+      "titulo": "Michael",
+      "nota": 6.8,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "la fiera": {
+      "titulo": "La fiera",
+      "nota": 6.0,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "moria": {
+      "titulo": "Moria",
+      "nota": 6.8,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "no se desea buena suerte": {
+      "titulo": "No se desea buena suerte",
+      "nota": 5.9,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "el peso de la ley": {
+      "titulo": "El peso de la ley",
+      "nota": 0,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "mi mejor amigo su novia y": {
+      "titulo": "Mi mejor amigo, su novia y",
+      "nota": 4.8,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "un hijo propio": {
+      "titulo": "Un hijo propio",
+      "nota": 6.0,
+      "fecha": "2026-08-16",
+      "notificado": false
+    },
+    "mi brillante carrera": {
+      "titulo": "Mi brillante carrera",
+      "nota": 6.8,
+      "fecha": "2026-08-16",
+      "notificado": false
     }
   }
 }
