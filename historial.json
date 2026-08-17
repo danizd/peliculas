@@ -2591,6 +2591,126 @@
       "nota": 6.8,
       "fecha": "2026-08-16",
       "notificado": false
+    },
+    "sobre ruedas": {
+      "titulo": "Sobre ruedas",
+      "nota": 5.1,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "esto aquello y todo lo demas": {
+      "titulo": "Esto, aquello y todo lo demás",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "nando entre dos mundos": {
+      "titulo": "Nando entre dos mundos",
+      "nota": 4.0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "conversaciones con asesinos las cintas de charles manson": {
+      "titulo": "Conversaciones con asesinos: Las cintas de Charles Manson",
+      "nota": 6.3,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "mourinho": {
+      "titulo": "Mourinho",
+      "nota": 6.4,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "la heroina del lazo": {
+      "titulo": "La heroína del lazo",
+      "nota": 4.8,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "la ultima casa": {
+      "titulo": "La última casa",
+      "nota": 4.8,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "muertos s": {
+      "titulo": "Muertos S",
+      "nota": 6.7,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "gatos callejeros de ricky gervais": {
+      "titulo": "Gatos callejeros, de Ricky Gervais",
+      "nota": 6.5,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "acaramelados": {
+      "titulo": "Acaramelados",
+      "nota": 5.6,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "operacion safed sagar la mision mas alta de la fuerza aerea india": {
+      "titulo": "Operación Safed Sagar: La misión más alta de la Fuerza Aérea India",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "regresare": {
+      "titulo": "Regresaré",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "idhayam murali": {
+      "titulo": "Idhayam Murali",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "mi vida con los chicos walter": {
+      "titulo": "Mi vida con los chicos Walter",
+      "nota": 5.3,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "cien anos de soledad": {
+      "titulo": "Cien años de soledad",
+      "nota": 7.6,
+      "fecha": "2026-08-17",
+      "notificado": true
+    },
+    "el escandalo de trustor desde dentro": {
+      "titulo": "El escándalo de Trustor desde dentro",
+      "nota": 5.6,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "pollo a lo grande una conspiracion de comida rapida": {
+      "titulo": "Pollo a lo grande: Una conspiración de comida rápida",
+      "nota": 5.4,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "sesame street y la tormenta": {
+      "titulo": "Sesame Street y la tormenta",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "luchadores 2": {
+      "titulo": "Luchadores 2",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
+    },
+    "rao bahadur": {
+      "titulo": "Rao Bahadur",
+      "nota": 0,
+      "fecha": "2026-08-17",
+      "notificado": false
     }
   }
 }
