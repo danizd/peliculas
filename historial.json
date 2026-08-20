@@ -2951,6 +2951,90 @@
       "nota": 5.8,
       "fecha": "2026-08-19",
       "notificado": false
+    },
+    "puella magi madoka magica la pelicula parte 1": {
+      "titulo": "Puella Magi Madoka Mágica: La película Parte 1",
+      "nota": 7.3,
+      "fecha": "2026-08-20",
+      "notificado": true
+    },
+    "outer banks": {
+      "titulo": "Outer Banks",
+      "nota": 6.0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "sacrificio de sangre": {
+      "titulo": "Sacrificio de sangre",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "sx": {
+      "titulo": "S&X",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "gurthukosthunnayi": {
+      "titulo": "Gurthukosthunnayi",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "la casa de la pradera": {
+      "titulo": "La casa de la pradera",
+      "nota": 6.3,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "peddi": {
+      "titulo": "Peddi",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "no tengo miedo": {
+      "titulo": "No tengo miedo",
+      "nota": 6.1,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "salcedo cuero y boogaloo": {
+      "titulo": "Salcedo, cuero y boogaloo",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "thunder 3": {
+      "titulo": "Thunder 3",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "hasta el final": {
+      "titulo": "Hasta el final",
+      "nota": 5.4,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "sing geetham": {
+      "titulo": "Sing Geetham",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "destellos del manana": {
+      "titulo": "Destellos del mañana",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
+    },
+    "daadi ki shaadi": {
+      "titulo": "Daadi Ki Shaadi",
+      "nota": 0,
+      "fecha": "2026-08-20",
+      "notificado": false
     }
   }
 }
