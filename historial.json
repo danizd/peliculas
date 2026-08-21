@@ -3035,6 +3035,60 @@
       "nota": 0,
       "fecha": "2026-08-20",
       "notificado": false
+    },
+    "insidious fuera del mas alla": {
+      "titulo": "Insidious: Fuera del más allá",
+      "nota": 0,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "el motin": {
+      "titulo": "El motín",
+      "nota": 5.0,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "a fuego": {
+      "titulo": "A fuego",
+      "nota": 0,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "prometido el cielo": {
+      "titulo": "Prometido el cielo",
+      "nota": 5.9,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "el coro de praga": {
+      "titulo": "El coro de Praga",
+      "nota": 6.5,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "a todo gas": {
+      "titulo": "A todo gas",
+      "nota": 5.6,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "la captura": {
+      "titulo": "La captura",
+      "nota": 0,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "la familia beneton 2": {
+      "titulo": "La familia Benetón +2",
+      "nota": 3.2,
+      "fecha": "2026-08-21",
+      "notificado": false
+    },
+    "amor amor boda": {
+      "titulo": "Amor, amor, boda",
+      "nota": 0,
+      "fecha": "2026-08-21",
+      "notificado": false
     }
   }
 }
