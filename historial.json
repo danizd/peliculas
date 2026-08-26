@@ -3113,6 +3113,66 @@
       "nota": 5.0,
       "fecha": "2026-08-25",
       "notificado": false
+    },
+    "el ser querido": {
+      "titulo": "El ser querido",
+      "nota": 7.0,
+      "fecha": "2026-08-26",
+      "notificado": true
+    },
+    "tadeo jones y la lampara maravillosa": {
+      "titulo": "Tadeo Jones y la lámpara maravillosa",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "la constelacion del perro": {
+      "titulo": "La constelación del perro",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "una noche al ano": {
+      "titulo": "Una noche al año",
+      "nota": 5.6,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "harry potter y la piedra filosofal": {
+      "titulo": "Harry Potter y la piedra filosofal",
+      "nota": 6.8,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "anoche conquiste tebas": {
+      "titulo": "Anoche conquisté Tebas",
+      "nota": 6.0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "la sombra del nogal": {
+      "titulo": "La sombra del nogal",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "ghost 2 big to rig": {
+      "titulo": "Ghost: 2 Big to Rig",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "la muerte de la esposa del pastor": {
+      "titulo": "La muerte de la esposa del pastor",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
+    },
+    "the last salute": {
+      "titulo": "The Last Salute",
+      "nota": 0,
+      "fecha": "2026-08-26",
+      "notificado": false
     }
   }
 }
