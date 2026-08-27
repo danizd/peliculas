@@ -3173,6 +3173,36 @@
       "nota": 0,
       "fecha": "2026-08-26",
       "notificado": false
+    },
+    "erupcja": {
+      "titulo": "Erupcja",
+      "nota": 5.7,
+      "fecha": "2026-08-27",
+      "notificado": false
+    },
+    "la superviviente": {
+      "titulo": "La superviviente",
+      "nota": 0,
+      "fecha": "2026-08-27",
+      "notificado": false
+    },
+    "leanne": {
+      "titulo": "Leanne",
+      "nota": 5.4,
+      "fecha": "2026-08-27",
+      "notificado": false
+    },
+    "beauty in black": {
+      "titulo": "Beauty in Black",
+      "nota": 4.8,
+      "fecha": "2026-08-27",
+      "notificado": false
+    },
+    "grand theft auto vi una mirada extendida": {
+      "titulo": "Grand Theft Auto VI: Una mirada extendida",
+      "nota": 0,
+      "fecha": "2026-08-27",
+      "notificado": false
     }
   }
 }
