@@ -3203,6 +3203,48 @@
       "nota": 0,
       "fecha": "2026-08-27",
       "notificado": false
+    },
+    "susurran tu nombre": {
+      "titulo": "Susurran tu nombre",
+      "nota": 5.2,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "toda la verdad de mis mentiras": {
+      "titulo": "Toda la verdad de mis mentiras",
+      "nota": 0,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "una mujer sin pasado": {
+      "titulo": "Una mujer sin pasado",
+      "nota": 0,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "cementerio": {
+      "titulo": "Cementerio",
+      "nota": 5.8,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "ratonera": {
+      "titulo": "Ratonera",
+      "nota": 0,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "alfa": {
+      "titulo": "Alfa",
+      "nota": 0,
+      "fecha": "2026-08-28",
+      "notificado": false
+    },
+    "tercera ley de newton": {
+      "titulo": "Tercera ley de Newton",
+      "nota": 0,
+      "fecha": "2026-08-28",
+      "notificado": false
     }
   }
 }
