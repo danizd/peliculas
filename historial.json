@@ -3287,6 +3287,24 @@
       "nota": 0,
       "fecha": "2026-09-02",
       "notificado": false
+    },
+    "the gentlemen la serie": {
+      "titulo": "The Gentlemen: La serie",
+      "nota": 7.1,
+      "fecha": "2026-09-03",
+      "notificado": true
+    },
+    "fito paez el mundo cabe en una cancion": {
+      "titulo": "Fito Páez: El mundo cabe en una canción",
+      "nota": 0,
+      "fecha": "2026-09-03",
+      "notificado": false
+    },
+    "gandhari": {
+      "titulo": "Gandhari",
+      "nota": 0,
+      "fecha": "2026-09-03",
+      "notificado": false
     }
   }
 }
