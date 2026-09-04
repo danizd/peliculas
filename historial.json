@@ -3305,6 +3305,84 @@
       "nota": 0,
       "fecha": "2026-09-03",
       "notificado": false
+    },
+    "cronos": {
+      "titulo": "Cronos",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "dulce sabor a muerte": {
+      "titulo": "Dulce sabor a muerte",
+      "nota": 4.4,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "black box vuelo 298": {
+      "titulo": "Black Box: Vuelo 298",
+      "nota": 4.9,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "cinco segundos": {
+      "titulo": "Cinco segundos",
+      "nota": 6.0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "jim queen": {
+      "titulo": "Jim Queen",
+      "nota": 7.3,
+      "fecha": "2026-09-04",
+      "notificado": true
+    },
+    "enjambre": {
+      "titulo": "Enjambre",
+      "nota": 5.9,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "el olor a leche quemada": {
+      "titulo": "El olor a leche quemada",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "la piel pulpo": {
+      "titulo": "La piel pulpo",
+      "nota": 4.8,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "mudras bailando hilos invisibles": {
+      "titulo": "Mudras Bailando hilos invisibles",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "ultimas palabras celebres gloria steinem": {
+      "titulo": "Últimas palabras célebres: Gloria Steinem",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "bajo tus pies": {
+      "titulo": "Bajo tus pies",
+      "nota": 4.1,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "el mundo de alix earle": {
+      "titulo": "El mundo de Alix Earle",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
+    },
+    "instadocus el avion senuelo": {
+      "titulo": "Instadocus: El avión señuelo",
+      "nota": 0,
+      "fecha": "2026-09-04",
+      "notificado": false
     }
   }
 }
