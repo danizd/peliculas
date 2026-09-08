@@ -3395,6 +3395,30 @@
       "nota": 0,
       "fecha": "2026-09-05",
       "notificado": false
+    },
+    "fauda": {
+      "titulo": "Fauda",
+      "nota": 7.2,
+      "fecha": "2026-09-08",
+      "notificado": true
+    },
+    "dang": {
+      "titulo": "Dang!",
+      "nota": 0,
+      "fecha": "2026-09-08",
+      "notificado": false
+    },
+    "secretos del deporte mr": {
+      "titulo": "Secretos del deporte: Mr",
+      "nota": 0,
+      "fecha": "2026-09-08",
+      "notificado": false
+    },
+    "stavros halkias uncle stav": {
+      "titulo": "Stavros Halkias: Uncle Stav",
+      "nota": 0,
+      "fecha": "2026-09-08",
+      "notificado": false
     }
   }
 }
