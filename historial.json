@@ -3425,6 +3425,36 @@
       "nota": 0,
       "fecha": "2026-09-09",
       "notificado": false
+    },
+    "el temps de montserrat": {
+      "titulo": "El temps de Montserrat",
+      "nota": 0,
+      "fecha": "2026-09-10",
+      "notificado": false
+    },
+    "llama a mi agente la pelicula": {
+      "titulo": "¡Llama a mi agente!: La película",
+      "nota": 0,
+      "fecha": "2026-09-10",
+      "notificado": false
+    },
+    "la timonel": {
+      "titulo": "La timonel",
+      "nota": 0,
+      "fecha": "2026-09-10",
+      "notificado": false
+    },
+    "chumbak": {
+      "titulo": "Chumbak",
+      "nota": 0,
+      "fecha": "2026-09-10",
+      "notificado": false
+    },
+    "el club gastronomico": {
+      "titulo": "El club gastronómico",
+      "nota": 0,
+      "fecha": "2026-09-10",
+      "notificado": false
     }
   }
 }
