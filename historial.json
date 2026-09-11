@@ -3455,6 +3455,90 @@
       "nota": 0,
       "fecha": "2026-09-10",
       "notificado": false
+    },
+    "practicamente magia 2": {
+      "titulo": "Prácticamente magia 2",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "un plan perfecto": {
+      "titulo": "Un plan perfecto",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "el nido": {
+      "titulo": "El nido",
+      "nota": 5.0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "detective conan el angel caido de la carretera": {
+      "titulo": "Detective Conan: El ángel caído de la carretera",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "bad apples": {
+      "titulo": "Bad Apples",
+      "nota": 7.3,
+      "fecha": "2026-09-11",
+      "notificado": true
+    },
+    "forastera": {
+      "titulo": "Forastera",
+      "nota": 5.8,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "mothers baby": {
+      "titulo": "Mother's Baby",
+      "nota": 5.9,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "oasis dont look back in anger": {
+      "titulo": "Oasis: Don't Look Back in Anger",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "lionel": {
+      "titulo": "Lionel",
+      "nota": 6.8,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "sagrado corazon": {
+      "titulo": "Sagrado corazón",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "las maravillas": {
+      "titulo": "Las maravillas",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "el ritual de lily": {
+      "titulo": "El ritual de Lily",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "gracias equipo": {
+      "titulo": "Gracias, equipo",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
+    },
+    "en coma": {
+      "titulo": "En coma",
+      "nota": 0,
+      "fecha": "2026-09-11",
+      "notificado": false
     }
   }
 }
