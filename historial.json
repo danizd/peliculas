@@ -3539,6 +3539,12 @@
       "nota": 0,
       "fecha": "2026-09-11",
       "notificado": false
+    },
+    "wolfgang": {
+      "titulo": "Wolfgang",
+      "nota": 6.2,
+      "fecha": "2026-09-12",
+      "notificado": false
     }
   }
 }
