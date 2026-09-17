@@ -3569,6 +3569,36 @@
       "nota": 0,
       "fecha": "2026-09-16",
       "notificado": false
+    },
+    "stranger things relatos del 85": {
+      "titulo": "Stranger Things: Relatos del 85",
+      "nota": 5.7,
+      "fecha": "2026-09-17",
+      "notificado": false
+    },
+    "belleza plastica": {
+      "titulo": "Belleza plástica",
+      "nota": 0,
+      "fecha": "2026-09-17",
+      "notificado": false
+    },
+    "monstruo la historia de lizzie borden": {
+      "titulo": "Monstruo: La historia de Lizzie Borden",
+      "nota": 0,
+      "fecha": "2026-09-17",
+      "notificado": false
+    },
+    "te conozco": {
+      "titulo": "Te conozco",
+      "nota": 0,
+      "fecha": "2026-09-17",
+      "notificado": false
+    },
+    "los solucionadores": {
+      "titulo": "Los solucionadores",
+      "nota": 0,
+      "fecha": "2026-09-17",
+      "notificado": false
     }
   }
 }
