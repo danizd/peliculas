@@ -3599,6 +3599,108 @@
       "nota": 0,
       "fecha": "2026-09-17",
       "notificado": false
+    },
+    "resident evil": {
+      "titulo": "Resident Evil",
+      "nota": 7.5,
+      "fecha": "2026-09-18",
+      "notificado": true
+    },
+    "coyote vs acme": {
+      "titulo": "Coyote vs Acme",
+      "nota": 6.8,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "tiempo de victoria": {
+      "titulo": "Tiempo de victoria",
+      "nota": 6.6,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "en la zona gris": {
+      "titulo": "En la zona gris",
+      "nota": 5.2,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "operacion teheran": {
+      "titulo": "Operación Teherán",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "sus hijos": {
+      "titulo": "Sus hijos",
+      "nota": 6.0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "mis queridisimos padres": {
+      "titulo": "Mis queridísimos padres",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "se abre la veda 2": {
+      "titulo": "Se abre la veda 2",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "femenino singular": {
+      "titulo": "Femenino, singular",
+      "nota": 6.6,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "tanit": {
+      "titulo": "Tanit",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "mumbo jumbo se hace enorme": {
+      "titulo": "Mumbo Jumbo se hace enorme",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "el ladron de perros": {
+      "titulo": "El ladrón de perros",
+      "nota": 6.1,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "las mejores": {
+      "titulo": "Las mejores",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "el escandalo": {
+      "titulo": "El escándalo",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "cuatro historias de deseo 3": {
+      "titulo": "Cuatro historias de deseo 3",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "modha rathri": {
+      "titulo": "Modha Rathri",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
+    },
+    "irumudi": {
+      "titulo": "Irumudi",
+      "nota": 0,
+      "fecha": "2026-09-18",
+      "notificado": false
     }
   }
 }
