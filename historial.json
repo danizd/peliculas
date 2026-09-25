@@ -3743,6 +3743,84 @@
       "nota": 0,
       "fecha": "2026-09-24",
       "notificado": false
+    },
+    "la bola negra": {
+      "titulo": "La bola negra",
+      "nota": 7.0,
+      "fecha": "2026-09-25",
+      "notificado": true
+    },
+    "en el corazon de la bestia": {
+      "titulo": "En el corazón de la bestia",
+      "nota": 6.2,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "la isla olvidada": {
+      "titulo": "La isla olvidada",
+      "nota": 7.3,
+      "fecha": "2026-09-25",
+      "notificado": true
+    },
+    "fall 2 deadpoint": {
+      "titulo": "Fall 2: Deadpoint",
+      "nota": 4.7,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "vengadores endgame": {
+      "titulo": "Vengadores: Endgame",
+      "nota": 7.3,
+      "fecha": "2026-09-25",
+      "notificado": true
+    },
+    "la familia dino": {
+      "titulo": "La familia Dino",
+      "nota": 0,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "rise": {
+      "titulo": "Rise",
+      "nota": 0,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "salmones rosas": {
+      "titulo": "Salmones rosas",
+      "nota": 0,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "chicho o mientras el cuerpo aguante": {
+      "titulo": "Chicho o Mientras el cuerpo aguante",
+      "nota": 7.1,
+      "fecha": "2026-09-25",
+      "notificado": true
+    },
+    "la noche esta marchandose": {
+      "titulo": "La noche está marchándose",
+      "nota": 6.6,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "unabomber": {
+      "titulo": "Unabomber",
+      "nota": 0,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "el problema final": {
+      "titulo": "El problema final",
+      "nota": 0,
+      "fecha": "2026-09-25",
+      "notificado": false
+    },
+    "jojos bizarre adventure parte 7 steel ball run": {
+      "titulo": "JoJo’s Bizarre Adventure Parte 7: Steel Ball Run",
+      "nota": 8.4,
+      "fecha": "2026-09-25",
+      "notificado": true
     }
   }
 }
