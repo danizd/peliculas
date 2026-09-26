@@ -3821,6 +3821,18 @@
       "nota": 8.4,
       "fecha": "2026-09-25",
       "notificado": true
+    },
+    "veneno": {
+      "titulo": "Veneno",
+      "nota": 7.5,
+      "fecha": "2026-09-26",
+      "notificado": true
+    },
+    "baby do die": {
+      "titulo": "Baby Do Die",
+      "nota": 0,
+      "fecha": "2026-09-26",
+      "notificado": false
     }
   }
 }
