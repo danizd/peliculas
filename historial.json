@@ -3839,6 +3839,24 @@
       "nota": 7.8,
       "fecha": "2026-09-28",
       "notificado": true
+    },
+    "lego one piece": {
+      "titulo": "LEGO One Piece",
+      "nota": 0,
+      "fecha": "2026-09-29",
+      "notificado": false
+    },
+    "mononoke iii la maldicion de la serpiente": {
+      "titulo": "Mononoke III: La maldición de la serpiente",
+      "nota": 0,
+      "fecha": "2026-09-29",
+      "notificado": false
+    },
+    "sam morril incorrect": {
+      "titulo": "Sam Morril: Incorrect",
+      "nota": 0,
+      "fecha": "2026-09-29",
+      "notificado": false
     }
   }
 }
