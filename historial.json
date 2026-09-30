@@ -3857,6 +3857,24 @@
       "nota": 0,
       "fecha": "2026-09-29",
       "notificado": false
+    },
+    "linkin park unshatter": {
+      "titulo": "Linkin Park: Unshatter",
+      "nota": 0,
+      "fecha": "2026-09-30",
+      "notificado": false
+    },
+    "el viudo hasta que la muerte nos separe": {
+      "titulo": "El viudo: Hasta que la muerte nos separe",
+      "nota": 0,
+      "fecha": "2026-09-30",
+      "notificado": false
+    },
+    "medusa": {
+      "titulo": "Medusa",
+      "nota": 4.4,
+      "fecha": "2026-09-30",
+      "notificado": false
     }
   }
 }
