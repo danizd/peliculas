@@ -3875,6 +3875,24 @@
       "nota": 4.4,
       "fecha": "2026-09-30",
       "notificado": false
+    },
+    "al este del eden": {
+      "titulo": "Al este del Edén",
+      "nota": 0,
+      "fecha": "2026-10-01",
+      "notificado": false
+    },
+    "rompiendo el hielo": {
+      "titulo": "Rompiendo el hielo",
+      "nota": 7.1,
+      "fecha": "2026-10-01",
+      "notificado": true
+    },
+    "ricos sin dinero": {
+      "titulo": "Ricos sin dinero",
+      "nota": 0,
+      "fecha": "2026-10-01",
+      "notificado": false
     }
   }
 }
