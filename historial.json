@@ -3989,6 +3989,12 @@
       "nota": 0,
       "fecha": "2026-10-02",
       "notificado": false
+    },
+    "ranma": {
+      "titulo": "Ranma ½",
+      "nota": 7.4,
+      "fecha": "2026-10-03",
+      "notificado": true
     }
   }
 }
