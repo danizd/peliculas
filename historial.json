@@ -3995,6 +3995,12 @@
       "nota": 7.4,
       "fecha": "2026-10-03",
       "notificado": true
+    },
+    "la caja azul": {
+      "titulo": "La caja azul",
+      "nota": 7.1,
+      "fecha": "2026-10-04",
+      "notificado": true
     }
   }
 }
