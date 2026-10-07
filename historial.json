@@ -4001,6 +4001,36 @@
       "nota": 7.1,
       "fecha": "2026-10-04",
       "notificado": true
+    },
+    "queen budapest": {
+      "titulo": "Queen Budapest",
+      "nota": 7.9,
+      "fecha": "2026-10-07",
+      "notificado": true
+    },
+    "machos de verdad": {
+      "titulo": "Machos de verdad",
+      "nota": 4.4,
+      "fecha": "2026-10-07",
+      "notificado": false
+    },
+    "cada vez menos extrano": {
+      "titulo": "Cada vez menos extraño",
+      "nota": 0,
+      "fecha": "2026-10-07",
+      "notificado": false
+    },
+    "el circulo": {
+      "titulo": "El círculo",
+      "nota": 0,
+      "fecha": "2026-10-07",
+      "notificado": false
+    },
+    "quien es martin mull": {
+      "titulo": "¿Quién es Martin Mull?",
+      "nota": 0,
+      "fecha": "2026-10-07",
+      "notificado": false
     }
   }
 }
