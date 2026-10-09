@@ -4043,6 +4043,120 @@
       "nota": 0,
       "fecha": "2026-10-08",
       "notificado": false
+    },
+    "el precio de la red": {
+      "titulo": "El precio de la red",
+      "nota": 6.6,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "la otra madre": {
+      "titulo": "La otra madre",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "naza": {
+      "titulo": "Naza",
+      "nota": 7.5,
+      "fecha": "2026-10-09",
+      "notificado": true
+    },
+    "el arbol muy muy lejano": {
+      "titulo": "El árbol muy muy lejano",
+      "nota": 5.5,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "las ciegas hormigas": {
+      "titulo": "Las ciegas hormigas",
+      "nota": 6.4,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "doraemon aventuras en el mundo del arte": {
+      "titulo": "Doraemon: Aventuras en el mundo del arte",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "mascotas al rescate": {
+      "titulo": "Mascotas al rescate",
+      "nota": 5.8,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "la vida de una mujer": {
+      "titulo": "La vida de una mujer",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "escape room 2": {
+      "titulo": "Escape Room 2",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "ceniza en la boca": {
+      "titulo": "Ceniza en la boca",
+      "nota": 6.1,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "su propio infierno": {
+      "titulo": "Su propio infierno",
+      "nota": 4.3,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "animales": {
+      "titulo": "Animales",
+      "nota": 5.3,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "aquel": {
+      "titulo": "Aquel",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "el hotel embrujado": {
+      "titulo": "El hotel embrujado",
+      "nota": 6.3,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "la chispa del amor": {
+      "titulo": "La chispa del amor",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "doctora": {
+      "titulo": "Doctora",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "lejos de casa el primer semestre": {
+      "titulo": "Lejos de casa: El primer semestre",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "en directo": {
+      "titulo": "En directo",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
+    },
+    "mandaadi": {
+      "titulo": "Mandaadi",
+      "nota": 0,
+      "fecha": "2026-10-09",
+      "notificado": false
     }
   }
 }
