@@ -4205,6 +4205,24 @@
       "nota": 0,
       "fecha": "2026-10-13",
       "notificado": false
+    },
+    "tras los pasos de gary glitter": {
+      "titulo": "Tras los pasos de Gary Glitter",
+      "nota": 0,
+      "fecha": "2026-10-14",
+      "notificado": false
+    },
+    "cada dia nace un listo": {
+      "titulo": "Cada día nace un listo",
+      "nota": 5.0,
+      "fecha": "2026-10-14",
+      "notificado": false
+    },
+    "expediente warren sin voz": {
+      "titulo": "Expediente Warren: Sin voz",
+      "nota": 0,
+      "fecha": "2026-10-14",
+      "notificado": false
     }
   }
 }
