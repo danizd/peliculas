@@ -4223,6 +4223,36 @@
       "nota": 0,
       "fecha": "2026-10-14",
       "notificado": false
+    },
+    "la voz quebrada": {
+      "titulo": "La voz quebrada",
+      "nota": 7.2,
+      "fecha": "2026-10-15",
+      "notificado": true
+    },
+    "la diplomatica": {
+      "titulo": "La diplomática",
+      "nota": 6.8,
+      "fecha": "2026-10-15",
+      "notificado": false
+    },
+    "hollywood arts": {
+      "titulo": "Hollywood Arts",
+      "nota": 0,
+      "fecha": "2026-10-15",
+      "notificado": false
+    },
+    "la tormenta": {
+      "titulo": "La tormenta",
+      "nota": 0,
+      "fecha": "2026-10-15",
+      "notificado": false
+    },
+    "cual es el precio de la dignidad": {
+      "titulo": "¿Cuál es el precio de la dignidad?",
+      "nota": 0,
+      "fecha": "2026-10-15",
+      "notificado": false
     }
   }
 }
