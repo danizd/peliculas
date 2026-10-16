@@ -4253,6 +4253,114 @@
       "nota": 0,
       "fecha": "2026-10-15",
       "notificado": false
+    },
+    "street fighter": {
+      "titulo": "Street Fighter",
+      "nota": 6.1,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "la invitacion": {
+      "titulo": "La invitación",
+      "nota": 6.7,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "whalefall": {
+      "titulo": "Whalefall",
+      "nota": 6.1,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "la maleta": {
+      "titulo": "La maleta",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "el mal hijo": {
+      "titulo": "El mal hijo",
+      "nota": 5.1,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "kakeru": {
+      "titulo": "Kakeru",
+      "nota": 5.6,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "boiuna la leyenda del amazonas": {
+      "titulo": "Boiúna: La leyenda del Amazonas",
+      "nota": 5.1,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "chopin": {
+      "titulo": "Chopin",
+      "nota": 6.2,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "cars": {
+      "titulo": "Cars",
+      "nota": 6.2,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "los demonios": {
+      "titulo": "Los demonios",
+      "nota": 6.7,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "exorcism chronicles the beginning": {
+      "titulo": "Exorcism Chronicles: The Beginning",
+      "nota": 5.3,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "parkour en gaza": {
+      "titulo": "Parkour en Gaza",
+      "nota": 6.4,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "miss jobson": {
+      "titulo": "Miss Jobson",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "lo dejamos aca": {
+      "titulo": "Lo dejamos acá",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "norm macdonald una vida nada normal": {
+      "titulo": "Norm MacDonald: Una vida nada normal",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "el discipulo": {
+      "titulo": "El discípulo",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "solterisima tambien": {
+      "titulo": "Solterísima también",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
+    },
+    "criminales organizados": {
+      "titulo": "Criminales organizados",
+      "nota": 0,
+      "fecha": "2026-10-16",
+      "notificado": false
     }
   }
 }
