@@ -4361,6 +4361,24 @@
       "nota": 0,
       "fecha": "2026-10-16",
       "notificado": false
+    },
+    "nightborn": {
+      "titulo": "Nightborn",
+      "nota": 5.7,
+      "fecha": "2026-10-17",
+      "notificado": false
+    },
+    "dragon ball super beerus": {
+      "titulo": "Dragon Ball Super: Beerus",
+      "nota": 7.0,
+      "fecha": "2026-10-17",
+      "notificado": true
+    },
+    "100 dias de engano": {
+      "titulo": "100 días de engaño",
+      "nota": 0,
+      "fecha": "2026-10-17",
+      "notificado": false
     }
   }
 }
