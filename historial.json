@@ -4391,6 +4391,18 @@
       "nota": 0,
       "fecha": "2026-10-20",
       "notificado": false
+    },
+    "todos los colores": {
+      "titulo": "Todos los colores",
+      "nota": 5.6,
+      "fecha": "2026-10-21",
+      "notificado": false
+    },
+    "el experimento de la carcel de stanford un nuevo enfoque": {
+      "titulo": "El experimento de la cárcel de Stanford: Un nuevo enfoque",
+      "nota": 0,
+      "fecha": "2026-10-21",
+      "notificado": false
     }
   }
 }
