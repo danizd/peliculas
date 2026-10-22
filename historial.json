@@ -4403,6 +4403,96 @@
       "nota": 0,
       "fecha": "2026-10-21",
       "notificado": false
+    },
+    "clayface": {
+      "titulo": "Clayface",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "leones en invierno": {
+      "titulo": "Leones en invierno",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "arriba tutto": {
+      "titulo": "Arriba Tutto",
+      "nota": 5.5,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "sentido y sensibilidad": {
+      "titulo": "Sentido y sensibilidad",
+      "nota": 6.9,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "wildwood el bosque salvaje": {
+      "titulo": "Wildwood: El bosque salvaje",
+      "nota": 8.3,
+      "fecha": "2026-10-22",
+      "notificado": true
+    },
+    "superthings la pelicula": {
+      "titulo": "Superthings: La película",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "un amor posible": {
+      "titulo": "Un amor posible",
+      "nota": 7.6,
+      "fecha": "2026-10-22",
+      "notificado": true
+    },
+    "blue heron": {
+      "titulo": "Blue Heron",
+      "nota": 6.6,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "los ninos estan bien": {
+      "titulo": "Los niños están bien",
+      "nota": 6.1,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "moscas": {
+      "titulo": "Moscas",
+      "nota": 7.0,
+      "fecha": "2026-10-22",
+      "notificado": true
+    },
+    "el samurai y el prisionero": {
+      "titulo": "El samurái y el prisionero",
+      "nota": 5.7,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "200 vidas paco rabal": {
+      "titulo": "200 vidas, Paco Rabal",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "el poder del rosario": {
+      "titulo": "El poder del Rosario",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "por casualidad hablaban de mi": {
+      "titulo": "¿Por casualidad hablaban de mí?",
+      "nota": 0,
+      "fecha": "2026-10-22",
+      "notificado": false
+    },
+    "nadie quiere esto": {
+      "titulo": "Nadie quiere esto",
+      "nota": 6.2,
+      "fecha": "2026-10-22",
+      "notificado": false
     }
   }
 }
