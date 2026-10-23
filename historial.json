@@ -4493,6 +4493,36 @@
       "nota": 6.2,
       "fecha": "2026-10-22",
       "notificado": false
+    },
+    "grande de espana": {
+      "titulo": "Grande de España",
+      "nota": 0,
+      "fecha": "2026-10-23",
+      "notificado": false
+    },
+    "lupin": {
+      "titulo": "Lupin",
+      "nota": 6.3,
+      "fecha": "2026-10-23",
+      "notificado": false
+    },
+    "paralizada por la esperanza la historia de maria bamford": {
+      "titulo": "Paralizada por la esperanza: La historia de Maria Bamford",
+      "nota": 0,
+      "fecha": "2026-10-23",
+      "notificado": false
+    },
+    "contra el huracan": {
+      "titulo": "Contra el huracán",
+      "nota": 0,
+      "fecha": "2026-10-23",
+      "notificado": false
+    },
+    "noche fatidica": {
+      "titulo": "Noche fatídica",
+      "nota": 0,
+      "fecha": "2026-10-23",
+      "notificado": false
     }
   }
 }
