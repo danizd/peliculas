@@ -4523,6 +4523,24 @@
       "nota": 0,
       "fecha": "2026-10-23",
       "notificado": false
+    },
+    "el cometa": {
+      "titulo": "El cometa",
+      "nota": 0,
+      "fecha": "2026-10-24",
+      "notificado": false
+    },
+    "dorothy": {
+      "titulo": "Dorothy",
+      "nota": 0,
+      "fecha": "2026-10-24",
+      "notificado": false
+    },
+    "the paradise": {
+      "titulo": "The Paradise",
+      "nota": 0,
+      "fecha": "2026-10-24",
+      "notificado": false
     }
   }
 }
