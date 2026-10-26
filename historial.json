@@ -4547,6 +4547,18 @@
       "nota": 0,
       "fecha": "2026-10-25",
       "notificado": false
+    },
+    "los otros renacentistas": {
+      "titulo": "Los otros renacentistas",
+      "nota": 0,
+      "fecha": "2026-10-26",
+      "notificado": false
+    },
+    "salario minimo": {
+      "titulo": "Salario mínimo",
+      "nota": 0,
+      "fecha": "2026-10-26",
+      "notificado": false
     }
   }
 }
