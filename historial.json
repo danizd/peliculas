@@ -4595,6 +4595,120 @@
       "nota": 0,
       "fecha": "2026-10-29",
       "notificado": false
+    },
+    "karateka": {
+      "titulo": "Karateka",
+      "nota": 6.2,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "hope": {
+      "titulo": "Hope",
+      "nota": 6.2,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "la oveja shaun mision calabaza": {
+      "titulo": "La oveja Shaun: Misión calabaza",
+      "nota": 6.7,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "wicker": {
+      "titulo": "Wicker",
+      "nota": 6.9,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "tiempos de ilusion": {
+      "titulo": "Tiempos de ilusión",
+      "nota": 7.0,
+      "fecha": "2026-10-30",
+      "notificado": true
+    },
+    "leviticus": {
+      "titulo": "Leviticus",
+      "nota": 6.0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "esta soledad": {
+      "titulo": "Esta soledad",
+      "nota": 5.5,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "gungo y los juegos cavernicolas": {
+      "titulo": "Gungo y los juegos cavernícolas",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "el mundo es ansi": {
+      "titulo": "El mundo es ansí",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "biblia negra": {
+      "titulo": "Biblia negra",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "colision": {
+      "titulo": "Colisión",
+      "nota": 6.8,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "sctv ese gran programa de tv que no sabias que existia": {
+      "titulo": "SCTV: Ese gran programa de TV que no sabías que existía",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "un trabajo maldito": {
+      "titulo": "Un trabajo maldito",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "el intercambio": {
+      "titulo": "El intercambio",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "el regalo de cumpleanos": {
+      "titulo": "El regalo de cumpleaños",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "el alma intranquila": {
+      "titulo": "El alma intranquila",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "akka": {
+      "titulo": "Akka",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "que hay de postre": {
+      "titulo": "¿Qué hay de postre?",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
+    },
+    "dont trouble the trouble": {
+      "titulo": "Don't Trouble the Trouble",
+      "nota": 0,
+      "fecha": "2026-10-30",
+      "notificado": false
     }
   }
 }
