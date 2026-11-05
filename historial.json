@@ -4751,6 +4751,54 @@
       "nota": 0,
       "fecha": "2026-11-04",
       "notificado": false
+    },
+    "palomas negras": {
+      "titulo": "Palomas negras",
+      "nota": 6.1,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "al norte del norte": {
+      "titulo": "Al norte del norte",
+      "nota": 5.6,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "vaya numerito": {
+      "titulo": "¡Vaya numerito!",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "un poco de compania antes de morir": {
+      "titulo": "Un poco de compañía antes de morir",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "alta gama el caso relojes": {
+      "titulo": "Alta gama: El caso relojes",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "diwali con corazon": {
+      "titulo": "Diwali con corazón",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "anestesia": {
+      "titulo": "Anestesia",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
+    },
+    "el don de enganar": {
+      "titulo": "El don de engañar",
+      "nota": 0,
+      "fecha": "2026-11-05",
+      "notificado": false
     }
   }
 }
