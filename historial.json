@@ -4799,6 +4799,96 @@
       "nota": 0,
       "fecha": "2026-11-05",
       "notificado": false
+    },
+    "ruega por nosotras": {
+      "titulo": "Ruega por nosotras",
+      "nota": 6.2,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "el gato con sombrero": {
+      "titulo": "El gato con sombrero",
+      "nota": 6.4,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "sacamantecas": {
+      "titulo": "Sacamantecas",
+      "nota": 6.9,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "los miserables": {
+      "titulo": "Los miserables",
+      "nota": 6.8,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "godzilla minus zero": {
+      "titulo": "Godzilla Minus Zero",
+      "nota": 7.2,
+      "fecha": "2026-11-06",
+      "notificado": true
+    },
+    "ramayana el nacimiento de una leyenda": {
+      "titulo": "Ramayana: El nacimiento de una leyenda",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "fiesta pagna": {
+      "titulo": "Fiesta Pagäna",
+      "nota": 5.5,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "el misterio de lucy lost": {
+      "titulo": "El misterio de Lucy Lost",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "george michael the faith tour": {
+      "titulo": "George Michael: The Faith Tour",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "el contrato un pacto con el diablo": {
+      "titulo": "El contrato Un pacto con el diablo",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "por que no escribo nada": {
+      "titulo": "Por qué no escribo nada",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "bob y bobek tras la pista de la zanahoria": {
+      "titulo": "Bob y Bobek, tras la pista de la zanahoria",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "los ojos del diablo": {
+      "titulo": "Los ojos del diablo",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "palacio": {
+      "titulo": "Palacio",
+      "nota": 0,
+      "fecha": "2026-11-06",
+      "notificado": false
+    },
+    "desprotexida el crimen de pazos": {
+      "titulo": "Desprotexida: El crimen de Pazos",
+      "nota": 6.6,
+      "fecha": "2026-11-06",
+      "notificado": false
     }
   }
 }
