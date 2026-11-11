@@ -4913,6 +4913,36 @@
       "nota": 0,
       "fecha": "2026-11-10",
       "notificado": false
+    },
+    "avedon": {
+      "titulo": "Avedon",
+      "nota": 0,
+      "fecha": "2026-11-11",
+      "notificado": false
+    },
+    "el cuerpo": {
+      "titulo": "El cuerpo",
+      "nota": 0,
+      "fecha": "2026-11-11",
+      "notificado": false
+    },
+    "el claroscuro": {
+      "titulo": "El claroscuro",
+      "nota": 0,
+      "fecha": "2026-11-11",
+      "notificado": false
+    },
+    "la ley de alicia": {
+      "titulo": "La ley de Alicia",
+      "nota": 0,
+      "fecha": "2026-11-11",
+      "notificado": false
+    },
+    "gospel de navidad": {
+      "titulo": "Góspel de Navidad",
+      "nota": 0,
+      "fecha": "2026-11-11",
+      "notificado": false
     }
   }
 }
