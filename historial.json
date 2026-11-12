@@ -4943,6 +4943,48 @@
       "nota": 0,
       "fecha": "2026-11-11",
       "notificado": false
+    },
+    "la emperatriz": {
+      "titulo": "La emperatriz",
+      "nota": 6.6,
+      "fecha": "2026-11-12",
+      "notificado": false
+    },
+    "el intercambio navideno": {
+      "titulo": "El intercambio navideño",
+      "nota": 0,
+      "fecha": "2026-11-12",
+      "notificado": false
+    },
+    "allen": {
+      "titulo": "Allen",
+      "nota": 0,
+      "fecha": "2026-11-12",
+      "notificado": false
+    },
+    "no nos rendimos": {
+      "titulo": "No nos rendimos",
+      "nota": 0,
+      "fecha": "2026-11-12",
+      "notificado": false
+    },
+    "nos conocimos en estambul": {
+      "titulo": "Nos conocimos en Estambul",
+      "nota": 7.2,
+      "fecha": "2026-11-12",
+      "notificado": true
+    },
+    "suzane von richthofen lo que el tiempo no borra": {
+      "titulo": "Suzane von Richthofen: Lo que el tiempo no borra",
+      "nota": 0,
+      "fecha": "2026-11-12",
+      "notificado": false
+    },
+    "mi mejor amiga": {
+      "titulo": "Mi mejor amiga",
+      "nota": 0,
+      "fecha": "2026-11-12",
+      "notificado": false
     }
   }
 }
