@@ -5135,6 +5135,30 @@
       "nota": 0,
       "fecha": "2026-11-15",
       "notificado": false
+    },
+    "gordon": {
+      "titulo": "Gordon",
+      "nota": 0,
+      "fecha": "2026-11-18",
+      "notificado": false
+    },
+    "guardaespaldas por navidad": {
+      "titulo": "Guardaespaldas por Navidad",
+      "nota": 0,
+      "fecha": "2026-11-18",
+      "notificado": false
+    },
+    "la ley de las bestias": {
+      "titulo": "La ley de las bestias",
+      "nota": 0,
+      "fecha": "2026-11-18",
+      "notificado": false
+    },
+    "los 12 signos de valentina": {
+      "titulo": "Los 12 signos de Valentina",
+      "nota": 0,
+      "fecha": "2026-11-18",
+      "notificado": false
     }
   }
 }
