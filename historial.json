@@ -5159,6 +5159,18 @@
       "nota": 0,
       "fecha": "2026-11-18",
       "notificado": false
+    },
+    "tesis": {
+      "titulo": "Tesis",
+      "nota": 7.7,
+      "fecha": "2026-11-19",
+      "notificado": true
+    },
+    "los altruistas": {
+      "titulo": "Los altruistas",
+      "nota": 0,
+      "fecha": "2026-11-19",
+      "notificado": false
     }
   }
 }
