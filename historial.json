@@ -5291,6 +5291,48 @@
       "nota": 0,
       "fecha": "2026-11-20",
       "notificado": false
+    },
+    "genesis": {
+      "titulo": "Génesis",
+      "nota": 7.4,
+      "fecha": "2026-11-21",
+      "notificado": true
+    },
+    "las disculpas de vicentina": {
+      "titulo": "Las disculpas de Vicentina",
+      "nota": 5.8,
+      "fecha": "2026-11-21",
+      "notificado": false
+    },
+    "el camino azul": {
+      "titulo": "El camino azul",
+      "nota": 0,
+      "fecha": "2026-11-21",
+      "notificado": false
+    },
+    "predicadore mediaticos": {
+      "titulo": "Predicadore$ mediáticos",
+      "nota": 0,
+      "fecha": "2026-11-21",
+      "notificado": false
+    },
+    "dhindora": {
+      "titulo": "Dhindora",
+      "nota": 0,
+      "fecha": "2026-11-21",
+      "notificado": false
+    },
+    "418": {
+      "titulo": "418",
+      "nota": 0,
+      "fecha": "2026-11-21",
+      "notificado": false
+    },
+    "haiku": {
+      "titulo": "Haiku",
+      "nota": 0,
+      "fecha": "2026-11-21",
+      "notificado": false
     }
   }
 }
