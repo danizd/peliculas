@@ -5381,6 +5381,36 @@
       "nota": 0,
       "fecha": "2026-11-25",
       "notificado": false
+    },
+    "fool night": {
+      "titulo": "Fool Night",
+      "nota": 0,
+      "fecha": "2026-11-26",
+      "notificado": false
+    },
+    "las esposas cazadoras": {
+      "titulo": "Las esposas cazadoras",
+      "nota": 5.8,
+      "fecha": "2026-11-26",
+      "notificado": false
+    },
+    "el secuestro de toos van der valk": {
+      "titulo": "El secuestro de Toos van der Valk",
+      "nota": 0,
+      "fecha": "2026-11-26",
+      "notificado": false
+    },
+    "servicio de urgencias": {
+      "titulo": "Servicio de urgencias",
+      "nota": 0,
+      "fecha": "2026-11-26",
+      "notificado": false
+    },
+    "navidades filipinas": {
+      "titulo": "Navidades filipinas",
+      "nota": 0,
+      "fecha": "2026-11-26",
+      "notificado": false
     }
   }
 }
