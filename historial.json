@@ -5411,6 +5411,126 @@
       "nota": 0,
       "fecha": "2026-11-26",
       "notificado": false
+    },
+    "hechizo bienvenidos a hexe": {
+      "titulo": "Hechizo: Bienvenidos a Hexe",
+      "nota": 6.5,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "ahora los suegros son ellos": {
+      "titulo": "Ahora los suegros son ellos",
+      "nota": 5.0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "oro sin ley": {
+      "titulo": "Oro sin ley",
+      "nota": 6.1,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "hermanas": {
+      "titulo": "Hermanas",
+      "nota": 6.5,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "sanguine": {
+      "titulo": "Sanguine",
+      "nota": 7.0,
+      "fecha": "2026-11-27",
+      "notificado": true
+    },
+    "puella magi madoka magica la pelicula la noche de walpurgis el ascenso": {
+      "titulo": "Puella Magi Madoka Magica La película: La noche de Walpurgis El ascenso",
+      "nota": 6.6,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "un hombre en un puente": {
+      "titulo": "Un hombre en un puente",
+      "nota": 5.8,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "todo el mundo quiere a bill evans": {
+      "titulo": "Todo el mundo quiere a Bill Evans",
+      "nota": 6.8,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "para vivir el implacable tiempo de pablo milanes": {
+      "titulo": "Para vivir: El implacable tiempo de Pablo Milanés",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "la maleta de alex": {
+      "titulo": "La maleta de Álex",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "hora y veinte": {
+      "titulo": "Hora y veinte",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "entre fronteras": {
+      "titulo": "Entre fronteras",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "la libertad doble": {
+      "titulo": "La libertad doble",
+      "nota": 4.9,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "la gran fiesta del cine": {
+      "titulo": "La gran fiesta del cine",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "gatibu sin decir adios": {
+      "titulo": "Gatibu, sin decir adiós",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "kotodama el camino del espejo": {
+      "titulo": "Kotodama, el camino del espejo",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "la redencion": {
+      "titulo": "La redención",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "los cangrejos": {
+      "titulo": "Los Cangrejos",
+      "nota": 6.4,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "taranta": {
+      "titulo": "Taranta",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
+    },
+    "quasimodo el alma de paris": {
+      "titulo": "Quasimodo, el alma de París",
+      "nota": 0,
+      "fecha": "2026-11-27",
+      "notificado": false
     }
   }
 }
